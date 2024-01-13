@@ -1,25 +1,61 @@
+import React from "react";
+import Image from "next/image";
+
+const destination = [
+  {
+    dest: "Bali",
+    url: "/destinations/bali.jpg",
+  },
+  {
+    dest: "Singapore",
+    url: "/destinations/singapore.jpg",
+  },
+  {
+    dest: "Thailand",
+    url: "/destinations/thailand.jpg",
+  },
+  {
+    dest: "Coorg",
+    url: "/destinations/coorg.jpg",
+  },
+  {
+    dest: "Indonesia",
+    url: "/destinations/indonesia.jpg",
+  },
+  {
+    dest: "Bir",
+    url: "/destinations/bir.jpg",
+  },
+  {
+    dest: "Dubai",
+    url: "/destinations/dubai.jpg",
+  },
+];
+
 export default function DestiNationExpertise() {
   return (
-    <div className="">
-      <div class="grid grid-flow-col justify-evenly scroll-pl-6 snap-x ">
-        <div class="snap-center pr-5">
-          <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
-        <div class="snap-center pr-5 ">
-          <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
-        <div class="snap-center pr-5 ">
-          <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
-        <div class="snap-center pr-5 ">
-          <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
-        <div class="snap-center pr-5 ">
-          <img src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
-        <div class="snap-center pr-5 ">
-          <img src="https://images.unsplash.com/photo-1559333086-b0a56225a93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-        </div>
+    <div className="py-5 w-90 align-middle">
+      <div className="px-5 text-2xl font-sans bold text-center text-gray-500">
+        travel like us to destinations we have traveled
+      </div>
+      <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
+        {destination.map((hello1) => (
+          <div key={hello1.dest} className="pr-5 pl-5 pt-5 relative">
+            <div
+              style={{ "--image-url": `url(${hello1.url})` }}
+              className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-2xl`}
+            >
+              <div className="absolute bottom-0">
+                <div className="rounded-lg w-60 bg-gradient-to-b from-transparent to-black text-white text-2xl md:text-2xl  bold font-denton text-center">
+                  {hello1.dest}
+                  <div className=" text-sm md:text-sm  font-denton text-center text-gray-500">
+                    starting Rs.10,000
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
