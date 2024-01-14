@@ -10,19 +10,27 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <div className="w-screen grid grid-cols-2 bg-gradient-to-br from-transparent to-black bg-opacity-5 ">
+    <div className="w-screen grid grid-cols-2">
 
-        <div className="pl-5 align-middle ">
+    <div className="flex justify-start m-5">
+<img
+                src="/instagram.svg"
+                className="w-10 h-10 object-contain"
+              ></img>
+
+        <div className="">
           <Link href="/">
-            <div className="font-bold text-sm text-white text-start ">
+            <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start p-2">
               Shubham Travels
             </div>
           </Link>
         </div>
+    </div>
+       
         
-        <div className="pr-5 align-middle ">
+        <div className="m-5">
           <Link href="/signin">
-            <div className="font-bold text-sm text-white text-end ">Sign In</div>
+            <div className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2">Sign In</div>
           </Link>
         </div>
     </div>

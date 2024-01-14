@@ -35,7 +35,7 @@ const destination = [
 export default function DestiNationExpertise() {
   return (
     <div className="py-5 w-90 align-middle">
-      <div className="px-5 text-2xl font-sans bold text-center text-gray-500">
+      <div className="px-5 text-2xl font-sans bold text-center text-gray-200">
         travel like us to destinations we have traveled
       </div>
       <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
