@@ -3,7 +3,7 @@ export default function CreatorCredentials() {
   return (
     <div className="w-screen mx-auto">
       <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 md:grid-rows-1 lg:grid-row-1  sm:grid-rows-2">
-        <div className="col-span-1 my-auto z-30">
+        <div className="col-span-1 my-auto z-30 mt-20">
           <div className="text-black text-center  mt-20">
             Checkout our channels
           </div>
