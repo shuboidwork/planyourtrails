@@ -5,6 +5,7 @@ import HowItWorks from "../../components/howitworks";
 import Intro, { GroupTravelIntro, Intro2 } from "../../components/intro";
 import LeadGen from "../../components/leadgen";
 import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 export default function Home() {
   return (
@@ -31,6 +32,9 @@ export default function Home() {
           <GroupTravelIntro className="bg-gradient-to-r from-transparent to-black"></GroupTravelIntro>
           <GroupTravel className=""></GroupTravel>
         </div>
+      </div>
+      <div className=" bg-cover bg-center relative bg-[url('/paperback.png')] ">
+        <Footer></Footer>
       </div>
     </div>
   );
