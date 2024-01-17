@@ -1,18 +1,17 @@
-import CreatorCredentials from "../../components/creatorcredentials";
-import DestiNationExpertise from "../../components/destinationexpertise";
-import GroupTravel from "../../components/grouptravel";
-import HowItWorks from "../../components/howitworks";
-import Intro, { GroupTravelIntro, Intro2 } from "../../components/intro";
-import LeadGen from "../../components/leadgen";
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
+import CreatorCredentials from "../../components/landing_components/creatorcredentials";
+import DestiNationExpertise from "../../components/landing_components/destinationexpertise";
+import GroupTravel from "../../components/landing_components/grouptravel";
+import HowItWorks from "../../components/common_components/howitworks";
+import Intro from "../../components/landing_components/intro";
+import GroupTravelIntro from "../../components/landing_components/intro";
+import LeadGen from "../../components/common_components/leadgen";
+import Footer from "../../components/common_components/footer";
 
 export default function Home() {
   return (
     <div>
-      <div className="w-screen bg-cover bg-center relative bg-[url('/heroback.jpg')]">
+      <div className="w-screen bg-cover bg-center relative bg-[url('/common/heroback.jpg')]">
         <div className="bg-gradient-to-b from-black via-transparent to-black">
-          <Navbar className=""></Navbar>
           <Intro className="py-2 w-screen"></Intro>
           <LeadGen></LeadGen>
           <div className="">
@@ -22,7 +21,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-screen bg-cover  relative bg-[url('/paperback4.png')]">
+      <div className="w-screen bg-cover  relative bg-[url('/common/paperback4.png')]">
         <CreatorCredentials></CreatorCredentials>
         <HowItWorks></HowItWorks>
       </div>
@@ -33,7 +32,7 @@ export default function Home() {
           <GroupTravel className=""></GroupTravel>
         </div>
       </div>
-      <div className=" bg-cover bg-center relative bg-[url('/paperback.png')] ">
+      <div className=" bg-cover bg-center relative bg-[url('/common/paperback.png')] ">
         <Footer></Footer>
       </div>
     </div>
