@@ -11,9 +11,8 @@ export default function LeadGen() {
                 </span>
                 <input
                   type="text"
-                  name="username"
-                  id="username"
-                  autocomplete="username"
+                  name="destination"
+                  id="destination"
                   className="ml-2 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-white placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Indonesia"
                 ></input>
@@ -32,7 +31,6 @@ export default function LeadGen() {
                   type="date"
                   name="date"
                   id="date"
-                  autocomplete="date"
                   className="ml-2 block flex-1 border-0 bg-transparent py-1.5 pl-1 text-white placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="10/12/2025"
                 ></input>

@@ -32,7 +32,7 @@ export default function Home() {
           <GroupTravel className=""></GroupTravel>
         </div>
       </div>
-      <div className=" bg-cover bg-center relative bg-[url('/common/paperback.png')] ">
+      <div className=" bg-cover bg-center relative bg-[url('/common/paperback4.png')] ">
         <Footer></Footer>
       </div>
     </div>

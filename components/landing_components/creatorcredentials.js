@@ -4,13 +4,13 @@ export default function CreatorCredentials() {
     <div className="w-screen mx-auto">
       <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 md:grid-rows-1 lg:grid-row-1  sm:grid-rows-2">
         <div className="col-span-1 my-auto z-30 mt-20">
-          <div className="text-black text-center  mt-20">
+          <div className="text-black text-center  mt-20 bold text-xl">
             Checkout our channels
           </div>
           <div className="">
             <div className="flex justify-center">
               <img
-                src="/instagram.svg"
+                src="/common/instagram.svg"
                 className="w-20 h-20 object-contain"
               ></img>
               <div>
@@ -55,7 +55,7 @@ export default function CreatorCredentials() {
             Collected Travel Magnets from 12+ countries
           </div>
           <img
-            src="/travelmagnet.png"
+            src="/common/travelmagnet.png"
             className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
           ></img>
         </div>
