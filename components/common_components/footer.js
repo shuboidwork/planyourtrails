@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-center p-10">
+    <div className="flex flex-col justify-center p-10 bg-cover relative bg-[url('/common/paperback4.png')] ">
       <div className="w-full">
         <div className="container mt-10 pt-15 flex flex-col items-center gap-16">
           <div className="flex flex-col gap-16">

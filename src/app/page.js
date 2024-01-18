@@ -10,7 +10,7 @@ import Footer from "../../components/common_components/footer";
 export default function Home() {
   return (
     <div>
-      <div className="w-screen bg-cover bg-center relative bg-[url('/common/heroback.jpg')]">
+      <div className="w-screen bg-cover bg-center relative bg-[url('/common/hero1.gif')]">
         <div className="bg-gradient-to-b from-black via-transparent to-black">
           <Intro className="py-2 w-screen"></Intro>
           <LeadGen></LeadGen>
@@ -32,7 +32,7 @@ export default function Home() {
           <GroupTravel className=""></GroupTravel>
         </div>
       </div>
-      <div className=" bg-cover bg-center relative bg-[url('/common/paperback4.png')] ">
+      <div className="">
         <Footer></Footer>
       </div>
     </div>

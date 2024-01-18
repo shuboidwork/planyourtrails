@@ -13,7 +13,7 @@ const destination = [
   },
   {
     dest: "Manali",
-    url: "/destinations/mysore.jpg",
+    url: "/common/travel2.jpg",
   },
   {
     dest: "Shimla",

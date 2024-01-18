@@ -11,12 +11,12 @@ const activities = [
   {
     id: 1,
     dest: "Tanah Lot Temple",
-    media_url: "/destinations/bali.jpg",
+    media_url: "/common/travel2.jpg",
   },
   {
     id: 2,
     dest: "Nusa Penida",
-    media_url: "/destinations/singapore.jpg",
+    media_url: "/common/travel1.jpg",
   },
   {
     id: 3,
@@ -26,16 +26,16 @@ const activities = [
   {
     id: 4,
     dest: "Oasis Restaurant",
-    media_url: "/destinations/thailand.jpg",
+    media_url: "/common/travel3.jpg",
   },
 ];
 
 export default function destination() {
   return (
-    <div className="w-screen bg-cover bg-center relative bg-[url('/common/paperbackedge.png')] my-auto">
+    <div className="w-screen bg-cover bg-center relative bg-[url('/common/travel3.jpg')] my-auto">
       <div className="w-screen pt-10">
         <div className="">
-          <DestinationIntro destination_text="What we did in Bali"></DestinationIntro>
+          <DestinationIntro destination_text="Our Top Picks in Bali"></DestinationIntro>
           <LeadGen></LeadGen>
         </div>
       </div>
@@ -43,13 +43,17 @@ export default function destination() {
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3"
+            className="md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3 bg-white shadow-2xl"
           >
             <div
               style={{ "--image-url": `url(${activity.media_url})` }}
-              className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-90 h-80 rounded-lg col-span-2`}
+              className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-90 h-80 rounded-lg col-span-2 order-${
+                activity.id % 2 === 0 ? 1 : 2
+              }`}
             >
-              <div className="mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
+              <div
+                className={`mb-2 bg-cover bg-center bg-[url('/common/Union.png')] `}
+              >
                 <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-2xl md:text-2xl  bold font-denton text-center">
                   {activity.dest}
                 </div>
@@ -67,11 +71,7 @@ export default function destination() {
         ))}
       </div>
 
-      <div className=" bg-cover bg-center relative bg-[url('/common/paperback4.png')] ">
-        <div className="">
-          <Footer></Footer>
-        </div>
-      </div>
+      <Footer></Footer>
     </div>
   );
 }

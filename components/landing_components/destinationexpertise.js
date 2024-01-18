@@ -58,7 +58,10 @@ export default function DestiNationExpertise() {
       <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
         {destination.map((hello1) => (
           <Link key={hello1.dest} href={"/destination"}>
-            <div key={hello1.dest} className={`pr-5 pl-5 pt-5 relative`}>
+            <div
+              key={hello1.dest}
+              className={`pr-5 pl-5 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}
+            >
               <div
                 style={{ "--image-url": `url(${hello1.url})` }}
                 className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-2xl`}
