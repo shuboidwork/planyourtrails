@@ -20,7 +20,7 @@ export  function GroupTravelIntro() {
     <div className="w-screen">
     <div className="grid grid-rows-6 gap-2 py-8 w-screen">
       <div className="w-screen row-span-6 text-center text-gray-500 font-sans text-sm md:text-2xl  font-bold ">
-        wait, it doesn't end here
+        wait, it does not end here
       </div>
       <div className="w-screen row-span-6 text-center text-white font-sans text-lg md:text-5xl  font-bold ">
         We host group travel too
