@@ -1,18 +1,5 @@
 
-export default function Intro() {
-  return (
-    <div className="w-screen">
-    <div className="grid grid-rows-10 gap-4 py-8 w-screen">
-      <div className="row-span-2"></div>
-      <div className=" w-50 row-span-4 text-center text-white  font-sans text-lg md:text-5xl md: font-bold align-middle ">
-        Book your dream destination with us
-      </div>
-      <div className="row-span-2"></div>
-    </div>
-    </div>
 
-  );
-}
 
 
 export  function GroupTravelIntro() {
@@ -38,6 +25,21 @@ export  function DestinationIntro({destination_text}) {
       <div className="w-screen row-span-6 text-center text-black font-sans text-lg md:text-5xl  font-bold ">
         {destination_text}
       </div>
+    </div>
+    </div>
+
+  );
+}
+
+export default function Intro() {
+  return (
+    <div className="w-screen">
+    <div className="grid grid-rows-10 gap-4 py-8 w-screen">
+      <div className="row-span-2"></div>
+      <div className=" w-50 row-span-4 text-center text-white  font-sans text-lg md:text-5xl md: font-bold align-middle ">
+        Book your dream destination with us
+      </div>
+      <div className="row-span-2"></div>
     </div>
     </div>
 

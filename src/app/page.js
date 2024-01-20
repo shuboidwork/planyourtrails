@@ -2,8 +2,9 @@ import CreatorCredentials from "../../components/landing_components/creatorcrede
 import DestiNationExpertise from "../../components/landing_components/destinationexpertise";
 import GroupTravel from "../../components/landing_components/grouptravel";
 import HowItWorks from "../../components/common_components/howitworks";
-import Intro from "../../components/landing_components/intro";
-import GroupTravelIntro from "../../components/landing_components/intro";
+import Intro, {
+  GroupTravelIntro,
+} from "../../components/landing_components/intro";
 import LeadGen from "../../components/common_components/leadgen";
 import Footer from "../../components/common_components/footer";
 
@@ -28,7 +29,7 @@ export default function Home() {
 
       <div className=" bg-cover bg-center relative bg-[url('/destinations/indonesia.jpg')] ">
         <div className="bg-gradient-to-b from-black via-transparent to-black to-70% ">
-          <GroupTravelIntro className="bg-gradient-to-r from-transparent to-black"></GroupTravelIntro>
+          <GroupTravelIntro></GroupTravelIntro>
           <GroupTravel className=""></GroupTravel>
         </div>
       </div>

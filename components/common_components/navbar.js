@@ -1,13 +1,5 @@
 import Link from "next/link";
 
-import Image from "next/image";
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-];
-
 export default function Navbar() {
   return (
     <div className="w-screen grid grid-cols-2">
