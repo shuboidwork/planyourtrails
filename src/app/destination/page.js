@@ -21,7 +21,7 @@ const activities = [
   {
     id: 3,
     dest: "Paragliding",
-    media_url: "/destinations/bir.jpg",
+    media_url: "/destinations/dubai.jpg",
   },
   {
     id: 4,

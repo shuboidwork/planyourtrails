@@ -39,7 +39,7 @@ const destination = [
   },
   {
     dest: "Bir",
-    url: "/destinations/bir.jpg",
+    url: "/destinations/dubai.jpg",
     r_class: randangle(),
   },
   {

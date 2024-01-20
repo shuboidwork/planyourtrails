@@ -25,7 +25,7 @@ const destination = [
   },
   {
     dest: "France",
-    url: "/destinations/bir.jpg",
+    url: "/destinations/dubai.jpg",
   },
 ];
 
