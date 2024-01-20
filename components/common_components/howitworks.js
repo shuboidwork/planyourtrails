@@ -2,7 +2,7 @@ import LeadGen from "./leadgen";
 
 export default function HowItWorks() {
   return (
-    <div className="flex flex-col justify-center p-10">
+    <div className="flex flex-col justify-center p-10 mx-auto">
       <div className="w-full">
         <div className="container my-10 flex flex-col items-center gap-16">
           <div className="flex flex-col gap-16">
