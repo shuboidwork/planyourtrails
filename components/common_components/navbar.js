@@ -18,23 +18,21 @@ export default function Navbar() {
             className="w-10 h-10 object-contain"
           ></img>
 
-          <div className="">
-            <Link href="/">
-              <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start p-2">
-                Shubham Travels
-              </div>
-            </Link>
+          <div
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start p-2"
+            href="/"
+          >
+            Shubham Travels
           </div>
         </div>
       </Link>
 
-      <div className="m-5">
-        <Link href="/signin">
-          <div className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2">
-            Sign In
-          </div>
-        </Link>
-      </div>
+      <Link
+        className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5"
+        href="/signin"
+      >
+        Sign In
+      </Link>
     </div>
   );
 }

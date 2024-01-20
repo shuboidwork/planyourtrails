@@ -1,6 +1,6 @@
 export default function LeadGen() {
   return (
-    <div className="h-30 w-screen flex justify-center border-white border-3">
+    <div className="h-30 w-full flex justify-center">
       <div className="bg-black h-15 rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 md:grid-rows-1 lg:md:grid-rows-1 sm:grid-rows-3">
         <div className="sm:row-span-1">
           <div className="grid grid-cols-1">
