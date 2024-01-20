@@ -60,7 +60,7 @@ export default function DestiNationExpertise() {
           <Link key={hello1.dest} href={"/destination"}>
             <div
               key={hello1.dest}
-              className={`pr-5 pl-5 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}
+              className={`pr-5 pl-5 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 duration-300`}
             >
               <div
                 style={{ "--image-url": `url(${hello1.url})` }}

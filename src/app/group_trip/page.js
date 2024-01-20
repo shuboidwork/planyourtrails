@@ -1,4 +1,6 @@
-import LeadGen from "../../../components/common_components/leadgen";
+import LeadGen, {
+  LeadGenGroup,
+} from "../../../components/common_components/leadgen";
 import Footer from "../../../components/common_components/footer";
 import Intro from "../../../components/landing_components/intro";
 import { DestinationIntro } from "../../../components/landing_components/intro";
@@ -34,17 +36,20 @@ const activities = [
 export default function destination() {
   return (
     <div className="w-screen bg-cover bg-center relative bg-[url('/common/paperbackedge.png')] my-auto">
-      <div className="w-screen pt-10">
-        <div className="">
+      <div className="w-screen pt-10 h-300">
+        <div className="my-auto">
+          <div className="text-black text-2xl text-center">
+            Bali, 24th May 2024 - 31st May 2024
+          </div>
           <DestinationIntro destination_text="Day wise itinerary"></DestinationIntro>
-          <LeadGen></LeadGen>
+          <LeadGenGroup></LeadGenGroup>
         </div>
       </div>
-      <div className="">
+      <div className="lg:px-20 md:px-20">
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="border border-black w-2/3 mt-10 mx-auto rounded-lg bg-white shadow-2xl"
+            className="border border-black mt-10 mx-auto  rounded-lg bg-white shadow-2xl"
           >
             <div className="h-10 bg-black text-white text-2xl pl-2 pb-2 bold align-center rounded-t-lg">
               {" "}

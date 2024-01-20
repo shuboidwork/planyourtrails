@@ -13,13 +13,10 @@ export default function Navbar() {
     <div className="w-screen grid grid-cols-2">
       <Link href={"/"} className="justify-start m-5">
         <div className=" flex ">
-          <Image
+          <img
             src="/common/instagram.svg"
             className="w-10 h-10 object-contain"
-            alt-property="Logo"
-            width={10}
-            height={10}
-          ></Image>
+          ></img>
 
           <div className="">
             <Link href="/">
