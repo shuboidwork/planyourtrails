@@ -33,55 +33,64 @@ const activities = [
 
 export default function destination() {
   return (
-    <div className="w-screen bg-cover bg-center relative bg-[url('/common/paperbackedge.png')] my-auto">
+    <div className="w-screen my-auto bg-cover bg-center relative bg-[url('/common/grouptriptravel.jpg')] ">
       <div className="w-screen pt-10 h-300">
-        <div className="my-auto">
-          <div className="text-black text-2xl text-center">
+        <div className="my-auto ">
+          <div className="text-white text-4xl bold  text-center">
+            Day wise itinerary
+          </div>
+          <div className="text-white text-2xl text-center ">
             Bali, 24th May 2024 - 31st May 2024
           </div>
-          <DestinationIntro destination_text="Day wise itinerary"></DestinationIntro>
+
           <LeadGenGroup></LeadGenGroup>
         </div>
       </div>
-      <div className="lg:px-20 md:px-20">
+      <div className="lg:px-20 md:px-20 px-5">
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="border border-black mt-10 mx-auto  rounded-lg bg-white shadow-2xl"
+            className=" mt-10 mx-auto  rounded-lg bg-white shadow-2xl border border-gray-600"
           >
             <div className="h-10 bg-black text-white text-2xl pl-2 pb-2 bold align-center rounded-t-lg">
               {" "}
               Day {activity.id}
             </div>
-            <div className="md:flex lg:flex rounded-2xl justify-center items-center   grid-cols-3">
-              <div
-                style={{ "--image-url": `url(${activity.media_url})` }}
-                className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
-              >
-                <div className="mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-sm  bold font-denton text-center">
-                    {activity.dest}
-                  </div>
+            <div className="flex rounded-2xl sm:justify-stretch md:justify-center lg:justify-center items-center overflow-auto no-scrollbar  grid-rows-1 grid-flow-col scroll-pl-6 snap-x">
+              <div className="snap-center">
+                <div
+                  style={{ "--image-url": `url(${activity.media_url})` }}
+                  className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
+                ></div>
+                <div className=" text-sm  bold font-denton text-center">
+                  {activity.dest}
                 </div>
               </div>
-              <div
-                style={{ "--image-url": `url(${activity.media_url})` }}
-                className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
-              >
-                <div className="mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-sm  bold font-denton text-center">
-                    {activity.dest}
-                  </div>
+              <div className="snap-center">
+                <div
+                  style={{ "--image-url": `url(${activity.media_url})` }}
+                  className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
+                ></div>
+                <div className=" text-sm  bold font-denton text-center">
+                  {activity.dest}
                 </div>
               </div>
-              <div
-                style={{ "--image-url": `url(${activity.media_url})` }}
-                className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
-              >
-                <div className="mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-sm  bold font-denton text-center">
-                    {activity.dest}
-                  </div>
+              <div className="snap-center">
+                <div
+                  style={{ "--image-url": `url(${activity.media_url})` }}
+                  className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
+                ></div>
+                <div className=" text-sm  bold font-denton text-center">
+                  {activity.dest}
+                </div>
+              </div>
+              <div className="snap-center">
+                <div
+                  style={{ "--image-url": `url(${activity.media_url})` }}
+                  className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
+                ></div>
+                <div className=" text-sm  bold font-denton text-center">
+                  {activity.dest}
                 </div>
               </div>
             </div>
