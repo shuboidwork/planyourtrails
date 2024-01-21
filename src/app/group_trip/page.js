@@ -198,7 +198,7 @@ export default function destination() {
           </div>
 
           <div className=" col-span-1 border border-black bg-gray-900 p-2">
-            <ul class="list-disc text-white p-2">
+            <ul className="list-disc text-white p-2">
               <li>
                 Now this is a story all about how, my life got flipped-turned
                 upside down

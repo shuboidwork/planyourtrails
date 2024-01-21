@@ -1,7 +1,7 @@
 export default function LeadGen() {
   return (
     <div className="h-30 w-full flex justify-center">
-      <div className=" border border-white bg-black h-15 rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 md:grid-rows-1 lg:md:grid-rows-1 sm:grid-rows-3">
+      <div className="border border-white bg-black h-15 rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 md:grid-rows-1 lg:md:grid-rows-1 sm:grid-rows-3">
         <div className=" m-2 sm:row-span-1">
           <div className="grid grid-cols-1">
             <div className="m-2">
@@ -39,7 +39,7 @@ export default function LeadGen() {
           </div>
         </div>
         <div className="m-2 col-span-1 sm:row-span-1 bg-blue-500 rounded-lg flex justify-center items-center">
-          <button className="text-white bold text-center m-2">
+          <button className="text-white bold text-center m-2 animate-pulse">
             Customise Itinerary
           </button>
         </div>

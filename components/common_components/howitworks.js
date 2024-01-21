@@ -2,8 +2,8 @@ import LeadGen from "./leadgen";
 
 export default function HowItWorks() {
   return (
-    <div className="w-full p-10">
-      <div className=" my-10 items-center">
+    <div className="w-full p-5 px-10">
+      <div className=" my-5 items-center">
         <div className="text-center m-5">
           <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl">
             How this works?
@@ -28,7 +28,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0">
+          <div className="rotate-90 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -68,7 +68,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0">
+          <div className="rotate-90 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -108,7 +108,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0">
+          <div className="rotate-90 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"

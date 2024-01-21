@@ -62,15 +62,25 @@ export default function DestiNationExpertise() {
               key={hello1.dest}
               className={`pr-5 pl-5 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 duration-300`}
             >
-              <div
-                style={{ "--image-url": `url(${hello1.url})` }}
-                className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-2xl`}
-              >
-                <div className="absolute bottom-2 mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-2xl md:text-2xl  bold font-denton text-center">
-                    {hello1.dest}
-                    <div className=" text-sm md:text-sm  font-denton text-center text-gray-700">
-                      starting Rs.10,000
+              <div className=" rounded-2xl ">
+                <div
+                  style={{ "--image-url": `url(${hello1.url})` }}
+                  className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-2xl shadow-lg shadow-white border border-white hover:animate-pulse`}
+                >
+                  <Link
+                    href="https://www.youtube.com/watch?v=3-FhDl6hB4s"
+                    className="absolute top-0 right-0 m-10 animate-pulse h-5 w-5 z-10"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img src="/elements/playbutton.png"></img>
+                  </Link>
+                  <div className="absolute bottom-2 mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
+                    <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-2xl md:text-2xl  bold font-denton text-center">
+                      {hello1.dest}
+                      <div className=" text-sm md:text-sm  font-denton text-center text-gray-700">
+                        starting Rs.10,000
+                      </div>
                     </div>
                   </div>
                 </div>

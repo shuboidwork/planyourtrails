@@ -41,7 +41,7 @@ export default function CreatorCredentials() {
           ></img>
           <img
             src="/destinations/thailand.jpg"
-            className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
+            className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
           ></img>
         </div>
 
