@@ -118,13 +118,13 @@ const itinerary = [
 
 export default function destination() {
   return (
-    <div className="w-screen my-auto bg-cover bg-center relative bg-[url('/common/grouptriptravel.jpg')] ">
+    <div className="w-screen my-auto bg-cover bg-center relative bg-[url('/common/travel3.jpg')] ">
       <div className="w-screen pt-10 h-300">
         <div className="my-auto ">
-          <div className="text-white text-4xl bold  text-center">
+          <div className="text-black text-4xl bold  text-center">
             Day wise itinerary
           </div>
-          <div className="text-white text-2xl text-center ">
+          <div className="text-black text-2xl text-center ">
             Bali, 24th May 2024 - 31st May 2024
           </div>
 

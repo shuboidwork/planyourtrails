@@ -11,7 +11,7 @@ import Footer from "../../components/common_components/footer";
 export default function Home() {
   return (
     <div>
-      <div className="w-screen bg-cover bg-center relative bg-[url('https://giphy.com/gifs/timelapse-clouds-3ov9jYnWBhgS041JPW')] mb-5">
+      <div className="w-screen bg-cover bg-center relative bg-[url('/common/heroback.gif')] mb-5">
         <div className="bg-gradient-to-b from-black via-transparent to-black">
           <Intro className="py-2 w-screen"></Intro>
           <LeadGen></LeadGen>

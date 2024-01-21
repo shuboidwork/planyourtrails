@@ -22,7 +22,7 @@ export  function DestinationIntro({destination_text}) {
   return (
     
     <div className="grid grid-rows-6 gap-2 py-8 w-screen">
-      <div className="w-screen row-span-6 text-center text-white font-sans text-lg md:text-5xl  font-bold ">
+      <div className="w-screen row-span-6 text-center text-black font-sans text-lg md:text-5xl  font-bold ">
         {destination_text}
       </div>
     </div>

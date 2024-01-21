@@ -28,7 +28,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0 animate-bounce">
+          <div className="sm:rotate-90 md:rotate-0 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -68,7 +68,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0 animate-bounce">
+          <div className="sm:rotate-90 md:rotate-0 rotate-90 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -108,7 +108,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </div>
-          <div className="rotate-90 lg:rotate-0 animate-bounce">
+          <div className="sm:rotate-90 md:rotate-0 rotate-90 lg:rotate-0 animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
