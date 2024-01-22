@@ -38,6 +38,7 @@ export default function Intro() {
       <div className="row-span-2"></div>
       <div className=" w-50 row-span-4 text-center text-white  font-roboto text-xl md:text-5xl font-bold align-middle ">
         Book your dream destination with us
+        <hr className="bg-gray-400 h-1 w-1/4 mx-auto animate-ping"></hr>
       </div>
       <div className="row-span-2"></div>
     </div>
