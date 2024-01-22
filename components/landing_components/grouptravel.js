@@ -31,15 +31,23 @@ const destination = [
 
 export default function GroupTravel() {
   return (
-    <div className="">
-      <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
+    <div className="pt-5">
+      <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-center scroll-pl-6 snap-x ">
         {destination.map((hello1) => (
           <Link key={hello1.dest} href={"/group_trip"}>
-            <div className="pr-5 pl-5 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 duration-300">
+            <div className="pr-3 pl-3 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 duration-300">
               <div
                 style={{ "--image-url": `url(${hello1.url})` }}
-                className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-lg shadow-lg shadow-white border border-white`}
+                className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-lg shadow-lg shadow-white`}
               >
+                <Link
+                  href="https://www.youtube.com/watch?v=3-FhDl6hB4s"
+                  className="absolute top-0 right-0 m-10 animate-pulse h-5 w-5 z-10"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src="/elements/playbutton.png"></img>
+                </Link>
                 <div className="absolute bottom-2 mb-2 bg-cover bg-center bg-[url('/common/Union.png')]">
                   <div className="rounded-lg w-60 bg-gradient-to-b from-transparent text-black text-2xl md:text-2xl  bold font-denton text-center">
                     {hello1.dest}

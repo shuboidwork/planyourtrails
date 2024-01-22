@@ -5,7 +5,7 @@ export default function HowItWorks() {
     <div className="w-full p-5 px-10">
       <div className=" my-5 items-center">
         <div className="text-center m-5">
-          <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl">
+          <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-roboto">
             How this works?
           </h2>
           <p className="text-base font-medium leading-7 text-dark-grey-600">
@@ -150,10 +150,10 @@ export default function HowItWorks() {
           </div>
         </div>
         <div className="text-center m-10">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl">
+          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-roboto">
             Why is this for you?
           </h2>
-          <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-dark-grey-600">
+          <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-dark-grey-600 pt-3">
             We make sure the itinerary is experential and suitable for your
             travel type. We add offbeat places which are not usually visited by
             people. And to add we give exclusive travel deals in our packages

@@ -6,21 +6,21 @@ export default function Navbar() {
       <Link href={"/"} className="justify-start m-5">
         <div className=" flex ">
           <img
-            src="/common/instagram.svg"
-            className="w-10 h-10 object-contain"
+            src="/common/travellogo.svg"
+            className="w-12 h-12 object-contain"
           ></img>
 
           <div
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start p-2"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start pt-3 pl-2 font-roboto"
             href="/"
           >
-            Shubham Travels
+            Travel Store
           </div>
         </div>
       </Link>
 
       <Link
-        className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5"
+        className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5 font-roboto "
         href="/signin"
       >
         Sign In

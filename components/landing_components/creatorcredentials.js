@@ -4,7 +4,7 @@ export default function CreatorCredentials() {
     <div className="w-screen mx-auto">
       <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 md:grid-rows-1 lg:grid-row-1  sm:grid-rows-2">
         <div className="col-span-1 my-auto z-30 mt-20">
-          <div className="text-black text-center  mt-20 bold text-xl">
+          <div className="text-black text-center  mt-20 bold text-2xl animate-pulse font-roboto">
             Checkout our channels
           </div>
           <div className="">

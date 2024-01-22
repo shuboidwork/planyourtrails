@@ -6,10 +6,10 @@ export default function Footer() {
     <div className="flex justify-center p-10 bg-cover relative bg-[url('/common/paperback4.png')] mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl text-black text-center">
+          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">
             Want to know more about us?
           </h2>
-          <p className="text-base font-medium leading-7 text-black text-center">
+          <p className="text-base font-medium leading-7 text-black text-center font-roboto">
             We share informative content on our instagram and youtube channel.
             And helped around 8000 travelers with their travel planning.
           </p>
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <LeadGen></LeadGen>
+        <LeadGen className="pt-5"></LeadGen>
 
         <div className="flex justify-center items-center mt-10">
           <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2">
