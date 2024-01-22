@@ -5,18 +5,20 @@ import HowItWorks from "../../components/common_components/howitworks";
 import Intro, {
   GroupTravelIntro,
 } from "../../components/landing_components/intro";
-import LeadGen from "../../components/common_components/leadgen";
+import LeadGen, {
+  LeadGenNew,
+} from "../../components/common_components/leadgen";
 import Footer from "../../components/common_components/footer";
 
 export default function Home() {
   return (
     <div>
-      <div className="w-screen bg-cover bg-center relative bg-[url('/common/heroback.jpg')] mb-5">
+      <div className="w-screen bg-cover bg-center relative bg-[url('/common/heroback.jpg')] mb-5 h-1/2">
         <div className="bg-gradient-to-b from-black via-transparent to-black">
           <Intro className="py-2 w-screen"></Intro>
-          <LeadGen></LeadGen>
-          <div className="">
-            <div className="bg-gradient-to-b from-transparent to-black ">
+          <LeadGenNew></LeadGenNew>
+          <div className="mt-50">
+            <div className="bg-gradient-to-b from-transparent to-black mt-50 ">
               <DestiNationExpertise className=""></DestiNationExpertise>
             </div>
           </div>

@@ -77,3 +77,15 @@ export function LeadGenGroup() {
     </div>
   );
 }
+
+export function LeadGenNew() {
+  return (
+    <div className="h-30 w-screen flex justify-center ">
+      <div className="col-span-1 sm:row-span-1 bg-blue-500 rounded-lg flex justify-center items-center">
+        <button className="text-white bold text-center m-2">
+          Plan your trip now!
+        </button>
+      </div>
+    </div>
+  );
+}
