@@ -23,7 +23,9 @@ export default function Navbar() {
         className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5 font-roboto "
         href="/signin"
       >
-        Sign In
+        <div className="col-span-1 sm:row-span-1 bg-blue-300 rounded-lg flex justify-center items-center">
+          <button className="text-white bold text-center m-2">Sign In</button>
+        </div>
       </Link>
     </div>
   );

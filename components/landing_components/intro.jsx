@@ -33,16 +33,9 @@ export  function DestinationIntro({destination_text}) {
 
 export default function Intro() {
   return (
-    <div className="w-screen">
-    <div className="grid grid-rows-10 gap-4 py-8 w-screen">
-      <div className="row-span-2"></div>
-      <div className=" w-50 row-span-4 text-center text-white  font-roboto text-xl md:text-5xl font-bold align-middle ">
-        Book your dream destination with us
-        <hr className="bg-gray-400 h-1 w-1/4 mx-auto animate-ping"></hr>
+      <div className="h-48 text-center text-white  font-roboto text-2xl md:text-5xl  ">
+        <div className="py-20">Book your dream destination with us</div>
       </div>
-      <div className="row-span-2"></div>
-    </div>
-    </div>
 
   );
 }

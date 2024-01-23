@@ -7,14 +7,23 @@ module.exports = {
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pgreen: "#37b8ab",
+        pblue: "#0f1e64",
+        oceanblue: "#0066cc",
+      },
+    },
     fontFamily: {
       sans: ["sans-serif"],
       roboto: ["Roboto"],
       denton: ["Denton"],
     },
   },
-  plugins: [],
+
+  plugins: [require("flowbite/plugin")],
 };

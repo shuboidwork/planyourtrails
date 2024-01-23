@@ -164,3 +164,95 @@ export default function HowItWorks() {
     </div>
   );
 }
+
+export function HowItWorksTrial() {
+  return (
+    <div className="w-full px-10 ">
+      <div className=" my-5 items-center">
+        <div className="text-center m-5">
+          <h2 className="mb-5 text-3xl text-gray-200  lg:text-4xl font-roboto">
+            How this works?
+          </h2>
+          <p className="text-base font-medium leading-7 text-gray-300 font-roboto">
+            We help you create a customise itinerary based on your requirement
+            and give you package to directly book it.
+          </p>
+        </div>
+
+        <div className="relative mt-30 lg:w-1/2 md:w-1/2 mx-auto">
+          <div className="sticky top-20 flex items-start gap-4 bg-slate-50  p-3 my-3 rounded-md s h-44 ">
+            <div className="my-15 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
+              <span className="text-base font-bold leading-7">1</span>
+            </div>
+            <div className="flex flex-col">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+                Create your Enquiry
+              </h3>
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto">
+                Share your preferred destination, your details so that we can
+                reach out to you.
+              </p>
+            </div>
+          </div>
+
+          <div className="sticky top-20 flex items-start gap-4 bg-slate-50  p-3 my-3 rounded-md s h-44 ">
+            <div className="my-15 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
+              <span className="text-base font-bold leading-7">2</span>
+            </div>
+            <div className="flex flex-col">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+                Requirement call
+              </h3>
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto">
+                Share your preferred destination, your details so that we can
+                reach out to you.
+              </p>
+            </div>
+          </div>
+
+          <div className="sticky top-20 shrink flex items-start gap-4 bg-slate-50 p-3 my-3 rounded-md  h-44 ">
+            <div className="my-15 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
+              <span className="text-base font-bold leading-7">3</span>
+            </div>
+            <div className="flex flex-col">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+                Creating curated itinerary
+              </h3>
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto">
+                We will apply our travel brain and create a personalised curated
+                itinerary for you.
+              </p>
+            </div>
+          </div>
+
+          <div className="sticky top-20 shrink flex items-start gap-4 bg-slate-50 p-3  my-3 rounded-md  h-44">
+            <div className="my-15 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
+              <span className="text-base font-bold leading-7">4</span>
+            </div>
+            <div className="flex flex-col">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+                Finalise your Travel Bookings
+              </h3>
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto">
+                We reach out to you with final itinerary and share package to
+                book. Once booked you are ready for an awesome travel experience
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center m-10">
+          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-200 lg:text-4xl font-roboto">
+            Why is this for you?
+          </h2>
+          <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-gray-300 pt-3 font-roboto">
+            We make sure the itinerary is experential and suitable for your
+            travel type. We add offbeat places which are not usually visited by
+            people. And to add we give exclusive travel deals in our packages
+          </p>
+        </div>
+        <LeadGen></LeadGen>
+      </div>
+    </div>
+  );
+}
