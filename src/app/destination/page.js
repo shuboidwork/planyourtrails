@@ -47,7 +47,7 @@ export default function destination() {
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="sticky top-10 md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3 bg-white shadow-2xl"
+            className="sticky top-10 md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3 bg-offwhite shadow-2xl"
           >
             <div
               style={{ "--image-url": `url(${activity.media_url})` }}

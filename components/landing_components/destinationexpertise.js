@@ -57,7 +57,6 @@ export default function DestiNationExpertise() {
           <p className="text-start font-roboto bold text-4xl text-gray-200 ">
             travel with us
           </p>
-          <hr className="border border-white w-1/2 lg:w-2/3 md:w-2/3 sm:w-1/2 mx-auto my-auto"></hr>
         </div>
         <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
           to destinations where we can give you tailor made itinerary and help

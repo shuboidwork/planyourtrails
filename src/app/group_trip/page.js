@@ -118,24 +118,24 @@ const itinerary = [
 
 export default function destination() {
   return (
-    <div className="w-screen my-auto bg-cover bg-center relative bg-[url('/common/travel3.jpg')] ">
+    <div className="w-screen my-auto font-roboto ">
       <div className="w-screen pt-10 h-300">
         <div className="my-auto ">
-          <div className="text-black text-4xl bold  text-center">
+          <div className="text-white text-4xl bold  text-center font-roboto">
             Day wise itinerary
           </div>
-          <div className="text-black text-2xl text-center ">
+          <div className="text-white text-2xl text-center font-roboto">
             Bali, 24th May 2024 - 31st May 2024
           </div>
 
           <LeadGenGroup></LeadGenGroup>
         </div>
       </div>
-      <div className="lg:px-20 md:px-20 px-5">
+      <div className="lg:px-20 md:px-20 px-5 relative">
         {itinerary.map((day) => (
           <div
             key={day.id}
-            className=" mt-10 mx-auto  rounded-lg bg-[url('/common/paperbackedge.png')] shadow-2xl border border-gray-600"
+            className=" sticky top-20 mt-10 mx-auto  rounded-lg bg-[url('/common/paperbackedge.png')] shadow-2xl border border-gray-600"
           >
             <div className="h-10 bg-black text-white text-2xl pl-2 pb-2 bold align-center rounded-t-lg">
               {" "}
@@ -148,7 +148,7 @@ export default function destination() {
                     style={{ "--image-url": `url(${activity.media_url})` }}
                     className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
                   ></div>
-                  <div className=" text-sm  bold font-denton text-center">
+                  <div className=" text-sm  bold font-roboto text-center">
                     {activity.dest}
                   </div>
                 </div>
@@ -156,10 +156,10 @@ export default function destination() {
             </div>
 
             <div className=" col-span-1 border border-black bg-gray-900">
-              <p className="text-white bold md:text-lg lg:text-lg sm:text-sm p-2">
+              <p className="text-white bold md:text-lg lg:text-lg sm:text-sm p-2 font-roboto">
                 {day.description}
               </p>
-              <ul class="list-none text-white p-2">
+              <ul class="list-none text-white p-2 font-roboto">
                 <li>
                   Now this is a story all about how, my life got flipped-turned
                   upside down

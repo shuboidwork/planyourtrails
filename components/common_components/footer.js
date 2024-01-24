@@ -3,7 +3,7 @@ import { LeadGenNew } from "./leadgen";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center p-10 bg-cover relative bg-[url('/common/paperback4.png')] mx-auto ">
+    <div className="flex justify-center p-10 bg-offwhite mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
           <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">

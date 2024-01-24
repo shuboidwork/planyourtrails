@@ -16,6 +16,7 @@ module.exports = {
         pgreen: "#37b8ab",
         pblue: "#0f1e64",
         oceanblue: "#0066cc",
+        offwhite: "#FAF9F6",
       },
     },
     fontFamily: {

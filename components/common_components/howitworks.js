@@ -181,7 +181,7 @@ export function HowItWorksTrial() {
       </div>
       <div className=" my-5 items-center  px-10 ">
         <div className="relative mt-30 lg:w-1/2 md:w-1/2 mx-auto">
-          <div className="sticky top-20 flex items-start gap-4 bg-slate-50  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
+          <div className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
             <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
               <span className="text-base font-bold leading-7">1</span>
             </div>
@@ -196,7 +196,7 @@ export function HowItWorksTrial() {
             </div>
           </div>
 
-          <div className="sticky top-20 flex items-start gap-4 bg-slate-50  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
+          <div className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
             <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
               <span className="text-base font-bold leading-7">2</span>
             </div>
@@ -211,7 +211,7 @@ export function HowItWorksTrial() {
             </div>
           </div>
 
-          <div className="sticky top-20 shrink flex items-start gap-4 bg-slate-50 p-3 my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500 ">
+          <div className="sticky top-20 shrink flex items-start gap-4 bg-offwhite p-3 my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500 ">
             <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
               <span className="text-base font-bold leading-7">3</span>
             </div>
@@ -226,7 +226,7 @@ export function HowItWorksTrial() {
             </div>
           </div>
 
-          <div className="sticky top-20 shrink flex items-start gap-4 bg-slate-50 p-3  my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500">
+          <div className="sticky top-20 shrink flex items-start gap-4 bg-offwhite p-3  my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500">
             <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
               <span className="text-base font-bold leading-7">4</span>
             </div>

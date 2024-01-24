@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function CreatorCredentials() {
   return (
-    <div className="w-screen mx-auto py-20">
+    <div className="w-screen mx-auto py-2">
       <div className="px-5 ">
         <div className="flex">
           <p className="text-start font-roboto bold text-4xl text-black ">
@@ -25,7 +25,7 @@ export default function CreatorCredentials() {
             className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
           ></img>
         </div>
-        <div className="col-span-1 my-auto mt-5">
+        <div className="col-span-1 my-auto mt-5  hidden lg:block md:block">
           <div className="text-black text-center  mt-20 bold text-2xl animate-pulse font-roboto">
             Checkout our channels
           </div>
@@ -57,7 +57,7 @@ export default function CreatorCredentials() {
           </div>
         </div>
 
-        <div className="sm:mt-20">
+        <div className="mt-2 lg:mt-20 md:mt-20">
           <div className="text-black bold text-xl font-roboto text-center">
             Collected Travel Magnets from 12+ countries
           </div>

@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <HowItWorksTrial></HowItWorksTrial>
-      <div className="w-screen lg:bg-contain md:bg-contain sm:bg-cover lg:bg-repeat md:bg-repeat sm:bg-no-repeat bg-[url('/common/paperback4.png')]">
+      <div className="w-screen bg-offwhite">
         <CreatorCredentials></CreatorCredentials>
       </div>
       <div className="py-10">
