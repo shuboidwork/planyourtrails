@@ -14,10 +14,10 @@ import Footer from "../../components/common_components/footer";
 
 export default function Home() {
   return (
-    <div>
-      <div className="mt-20 w-screen bg-fixed bg-cover bg-center bg-no-repeat relative bg-[url('/common/heroback.png')] h-96">
-        <div className="bg-cover bg-gradient-to-b from-black via-transparent to-black items-center align-middle h-full">
-          <Intro className="py-2 w-screen"></Intro>
+    <div className="w-screen">
+      <div className="mt-20 w-screen bg-fixed bg-cover bg-center bg-no-repeat relative bg-[url('/common/hero1.gif')] h-96">
+        <div className="items-center h-full z-10">
+          <Intro className=" w-screen"></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
       </div>
@@ -29,13 +29,10 @@ export default function Home() {
       <div className="w-screen lg:bg-contain md:bg-contain sm:bg-cover lg:bg-repeat md:bg-repeat sm:bg-no-repeat bg-[url('/common/paperback4.png')]">
         <CreatorCredentials></CreatorCredentials>
       </div>
-
-      <div className=" bg-cover bg-center relative bg-[url('/common/travel2.jpg')] ">
-        <div className="bg-gradient-to-b from-black via-transparent to-black to-70% ">
-          <GroupTravelIntro></GroupTravelIntro>
-          <GroupTravel className=""></GroupTravel>
-        </div>
+      <div className="py-10">
+        <GroupTravel></GroupTravel>
       </div>
+
       <div className="">
         <Footer></Footer>
       </div>

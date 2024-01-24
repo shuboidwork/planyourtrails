@@ -32,13 +32,26 @@ const destination = [
 export default function GroupTravel() {
   return (
     <div className="pt-5">
+      <div className="px-5 ">
+        <div className="flex">
+          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+            we host group trips too
+          </p>
+          <hr className="border border-white w-1/2 lg:w-2/3 md:w-2/3 sm:w-1/2 mx-auto my-auto"></hr>
+        </div>
+        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+          We will travel together along with like minded people for amazing
+          experience you will remember for life!
+        </p>
+      </div>
+
       <div className="w-screen overflow-auto no-scrollbar grid grid-rows-1 grid-flow-col justify-center scroll-pl-6 snap-x ">
         {destination.map((hello1) => (
           <Link key={hello1.dest} href={"/group_trip"}>
             <div className="pr-3 pl-3 pt-5 relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-20 duration-300">
               <div
                 style={{ "--image-url": `url(${hello1.url})` }}
-                className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-lg shadow-lg shadow-white`}
+                className={`static bg-cover bg-opacity-50 bg-[image:var(--image-url)] snap-center w-60 h-80 rounded-lg`}
               >
                 <Link
                   href="https://www.youtube.com/watch?v=3-FhDl6hB4s"

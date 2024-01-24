@@ -1,4 +1,4 @@
-import LeadGen from "./leadgen";
+import LeadGen, { LeadGenNew } from "./leadgen";
 
 export default function HowItWorks() {
   return (
@@ -169,10 +169,11 @@ export function HowItWorksTrial() {
   return (
     <div className="w-full">
       <div className="px-5 ">
-        <p className="text-start font-roboto bold text-4xl text-gray-200 ">
-          how it works
-        </p>
-        <hr className="border border-white w-2/3"></hr>
+        <div className="flex">
+          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+            how it works?
+          </p>
+        </div>
         <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
           We help you create a customise itinerary based on your requirement and
           give you package to directly book it.
@@ -241,19 +242,22 @@ export function HowItWorksTrial() {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="text-center m-10">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-200 lg:text-4xl font-roboto">
-            Why is this for you?
-          </h2>
-          <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-gray-300 pt-3 font-roboto">
-            We make sure the itinerary is experential and suitable for your
-            travel type. We add offbeat places which are not usually visited by
-            people. And to add we give exclusive travel deals in our packages
+      <div className="px-5 py-5 ">
+        <div className="flex">
+          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+            why is this for you?
           </p>
         </div>
-        <LeadGen></LeadGen>
+
+        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+          We make sure the itinerary is experential and suitable for your travel
+          type. We add offbeat places which are not usually visited by people.
+          And to add we give exclusive travel deals in our packages
+        </p>
       </div>
+      <LeadGenNew></LeadGenNew>
     </div>
   );
 }

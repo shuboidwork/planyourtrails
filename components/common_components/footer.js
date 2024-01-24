@@ -1,4 +1,4 @@
-import LeadGen from "./leadgen";
+import LeadGenNew from "./leadgen";
 import Link from "next/link";
 
 export default function Footer() {
@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="flex justify-center p-10 bg-cover relative bg-[url('/common/paperback4.png')] mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">
+          <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">
             Want to know more about us?
           </h2>
           <p className="text-base font-medium leading-7 text-black text-center font-roboto">
@@ -17,7 +17,7 @@ export default function Footer() {
         <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
           <div className="flex items-start gap-4">
             <div className="flex flex-col  border-white border-10">
-              <h3 className="mb-2 text-base font-bold leading-tight text-black">
+              <h3 className="mb-2 text-base font-bold leading-tight text-black font-roboto">
                 Follow us on Instagram
               </h3>
               <div className="flex justify-center">
@@ -26,17 +26,19 @@ export default function Footer() {
                   className="w-20 h-20 object-contain"
                 ></img>
                 <div>
-                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2">
+                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-roboto">
                     Instagram
                   </div>
-                  <div className="text-black ml-2">300k Subscribers</div>
+                  <div className="text-black ml-2 font-roboto">
+                    300k Subscribers
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex items-start gap-4">
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-black">
+              <h3 className="mb-2 text-base font-bold leading-tight text-black font-roboto">
                 Follow us on Youtube
               </h3>
               <div className="flex justify-center">
@@ -45,20 +47,22 @@ export default function Footer() {
                   className="w-20 h-20 object-contain"
                 ></img>
                 <div>
-                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2">
+                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-roboto">
                     Youtube
                   </div>
-                  <div className="text-gray-700 ml-2">100k Subscribers</div>
+                  <div className="text-gray-700 ml-2 font-roboto">
+                    100k Subscribers
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <LeadGen className="pt-5"></LeadGen>
+        <LeadGenNew className="pt-5"></LeadGenNew>
 
         <div className="flex justify-center items-center mt-10">
-          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2">
+          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-roboto">
             Powered by
           </div>
           <img
@@ -67,7 +71,7 @@ export default function Footer() {
           ></img>
 
           <Link
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-roboto"
             href="/"
           >
             Pastree

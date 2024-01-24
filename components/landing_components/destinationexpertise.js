@@ -53,11 +53,16 @@ export default function DestiNationExpertise() {
   return (
     <div className="py-5 w-screen">
       <div className="px-5 ">
-        <p className="text-start font-roboto bold text-4xl text-gray-200 ">
-          travel like us to
+        <div className="flex">
+          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+            travel with us
+          </p>
+          <hr className="border border-white w-1/2 lg:w-2/3 md:w-2/3 sm:w-1/2 mx-auto my-auto"></hr>
+        </div>
+        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+          to destinations where we can give you tailor made itinerary and help
+          you with all bookings
         </p>
-        <hr className="border border-white w-2/3 text-center"></hr>
-        <p className="text-end animate-pulse text-white text-4xl">&rarr;</p>
       </div>
       <div className="w-svw p-5 overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
         {destination.map((hello1) => (

@@ -1,9 +1,31 @@
 import Image from "next/image";
 export default function CreatorCredentials() {
   return (
-    <div className="w-screen mx-auto">
+    <div className="w-screen mx-auto py-20">
+      <div className="px-5 ">
+        <div className="flex">
+          <p className="text-start font-roboto bold text-4xl text-black ">
+            about us
+          </p>
+        </div>
+        <p className="text-base font-medium leading-7 text-gray-600 font-roboto mt-2 ">
+          This is the description regarding the store owner and their journey so
+          far in travel space. This will include how many countries they have
+          travelled and how many destinations they are expert in.
+        </p>
+      </div>
       <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 md:grid-rows-1 lg:grid-row-1  sm:grid-rows-2">
-        <div className="col-span-1 my-auto z-30 mt-20">
+        <div className="col-span-1 flex justify-center my-auto">
+          <img
+            src="/common/creatorcred.jpg"
+            className="-rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
+          ></img>
+          <img
+            src="/destinations/thailand.jpg"
+            className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
+          ></img>
+        </div>
+        <div className="col-span-1 my-auto mt-5">
           <div className="text-black text-center  mt-20 bold text-2xl animate-pulse font-roboto">
             Checkout our channels
           </div>
@@ -34,29 +56,14 @@ export default function CreatorCredentials() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 flex justify-center my-auto">
-          <img
-            src="/common/creatorcred.jpg"
-            className="-rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
-          ></img>
-          <img
-            src="/destinations/thailand.jpg"
-            className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
-          ></img>
-        </div>
 
-        <div className="m-1 md:pt-20 md:pr-20 sm:p-2 lg:pt-20 lg:pr-20 z-30">
-          <p className="text-gray-800 text-center md:text-lg lg:text-lg sm:text-sm font-roboto p-2">
-            This is the description regarding the store owner and their journey
-            so far in travel space. This will include how many countries they
-            have travelled and how many destinations they are expert in.
-          </p>
+        <div className="sm:mt-20">
           <div className="text-black bold text-xl font-roboto text-center">
             Collected Travel Magnets from 12+ countries
           </div>
           <img
             src="/common/travelmagnet.png"
-            className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
+            className="w-30 h-60 object-contain items-center justify-center "
           ></img>
         </div>
       </div>
