@@ -32,18 +32,22 @@ const activities = [
 
 export default function destination() {
   return (
-    <div className="w-screen bg-cover bg-center relative bg-[url('/common/travel3.jpg')] my-auto">
-      <div className="w-screen pt-10">
-        <div className="">
-          <DestinationIntro destination_text="Our Top Picks in Bali"></DestinationIntro>
-          <LeadGen></LeadGen>
-        </div>
+    <div className="w-screen my-auto">
+      <div className="mt-10 pt-15 items-center ">
+        <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-white text-center font-roboto">
+          our top picks in Bali
+        </h2>
+        <p className="text-base font-medium leading-7 text-white text-center font-roboto">
+          In Bali, we experienced the local culture, had amazing food and party.
+          The mesmerising views of Nusa Penida and views lush green surrounded
+          waterfall are still in our eye
+        </p>
       </div>
-      <div className="">
+      <div className="relative ">
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3 bg-white shadow-2xl"
+            className="sticky top-10 md:flex lg:flex rounded-2xl justify-center items-center mx-auto w-2/3 mt-10  grid-cols-3 bg-white shadow-2xl"
           >
             <div
               style={{ "--image-url": `url(${activity.media_url})` }}
