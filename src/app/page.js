@@ -15,7 +15,7 @@ import Footer from "../../components/common_components/footer";
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className="mt-20 w-screen bg-fixed bg-cover bg-center bg-no-repeat relative bg-[url('/common/hero1.gif')] h-96">
+      <div className="mt-20 w-screen bg-fixed bg-cover bg-center relative bg-[url('/common/hero1.gif')] h-96">
         <div className="items-center h-full z-10">
           <Intro className=" w-screen"></Intro>
           <LeadGenNew></LeadGenNew>
