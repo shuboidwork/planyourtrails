@@ -81,7 +81,7 @@ export function LeadGenGroup() {
 export function LeadGenNew() {
   return (
     <div className="h-30 w-screen flex justify-center ">
-      <div className="col-span-1 sm:row-span-1 bg-blue-500 rounded-lg flex justify-center items-center">
+      <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-black rounded-lg flex justify-center items-center">
         <button className="text-white bold text-center m-2 font-roboto">
           Plan your trip now!
         </button>

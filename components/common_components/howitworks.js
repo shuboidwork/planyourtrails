@@ -179,7 +179,6 @@ export function HowItWorksTrial() {
           give you package to directly book it.
         </p>
       </div>
-
       <div className=" my-5 items-center  px-10 ">
         <div className="relative mt-30 lg:w-1/2 md:w-1/2 mx-auto">
           <div className="sticky top-20 flex items-start gap-4 bg-slate-50  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
@@ -243,7 +242,6 @@ export function HowItWorksTrial() {
           </div>
         </div>
       </div>
-
       <div className="px-5 py-5 ">
         <div className="flex">
           <p className="text-start font-roboto bold text-4xl text-gray-200 ">
@@ -257,7 +255,7 @@ export function HowItWorksTrial() {
           And to add we give exclusive travel deals in our packages
         </p>
       </div>
-      <LeadGenNew></LeadGenNew>
+      <LeadGenNew></LeadGenNew>={" "}
     </div>
   );
 }

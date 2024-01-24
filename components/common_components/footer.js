@@ -1,5 +1,5 @@
-import LeadGenNew from "./leadgen";
 import Link from "next/link";
+import { LeadGenNew } from "./leadgen";
 
 export default function Footer() {
   return (
@@ -58,8 +58,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        <LeadGenNew className="pt-5"></LeadGenNew>
 
         <div className="flex justify-center items-center mt-10">
           <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-roboto">
