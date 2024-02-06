@@ -3,7 +3,7 @@ import { LeadGenNew } from "./leadgen";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center p-10 bg-offwhite mx-auto ">
+    <div className="flex justify-center  bg-offwhite mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
           <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">
@@ -13,6 +13,9 @@ export default function Footer() {
             We share informative content on our instagram and youtube channel.
             And helped around 8000 travelers with their travel planning.
           </p>
+          <div className="mt-15">
+            <LeadGenNew></LeadGenNew>
+          </div>
         </div>
         <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
           <div className="flex items-start gap-4">
@@ -82,7 +85,7 @@ export default function Footer() {
 
 export function FooterGroup() {
   return (
-    <div className="flex justify-center p-10 bg-offwhite mx-auto ">
+    <div className="flex justify-center bg-offwhite mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
           <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-roboto">
@@ -92,6 +95,9 @@ export function FooterGroup() {
             Share your information with us, we will reach out to you once we
             have next trip planned.
           </p>
+          <div className="mt-15">
+            <LeadGenNew></LeadGenNew>
+          </div>
         </div>
         <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
           <div className="flex items-start gap-4">
