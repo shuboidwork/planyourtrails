@@ -85,9 +85,6 @@ export default function DestiNationExpertise() {
                 <div className="w-60 absolute bottom-2   bg-cover bg-center bg-[url('/common/Union.png')]">
                   <div className="text-black text-2xl md:text-2xl  bold font-roboto text-center">
                     {hello1.dest}
-                    <div className=" text-sm md:text-sm  font-roboto text-center text-gray-700">
-                      starting Rs.10,000
-                    </div>
                   </div>
                 </div>
               </div>

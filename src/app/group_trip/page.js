@@ -1,7 +1,9 @@
 import LeadGen, {
   LeadGenGroup,
 } from "../../../components/common_components/leadgen";
-import Footer from "../../../components/common_components/footer";
+import Footer, {
+  FooterGroup,
+} from "../../../components/common_components/footer";
 import { DestinationIntro } from "../../../components/landing_components/intro";
 
 const itinerary = [
@@ -213,7 +215,7 @@ export default function destination() {
       </div>
 
       <div className="">
-        <Footer></Footer>
+        <FooterGroup></FooterGroup>
       </div>
     </div>
   );

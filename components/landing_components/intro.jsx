@@ -36,7 +36,7 @@ export default function Intro() {
       <div className="h-48 text-center text-white  font-roboto  my-10">
         <div className="py-20">
           <p className="text-slate-100 text-3xl">Book your</p>
-          <p className="text-white text-7xl">dream tour</p>
+          <p className="text-black text-7xl">dream tour</p>
           <p className="text-slate-100 text-3xl">with us</p>
         </div>
       </div>
