@@ -35,9 +35,9 @@ export default function Intro() {
   return (
       <div className="text-center text-white  font-sanchez  mb-10 my-auto">
         <div className="">
-          <p className="text-gray-800 text-3xl">Book your</p>
-          <p className="text-black text-9xl">dream tour</p>
-          <p className="text-gray-800 text-3xl">with us</p>
+          <p className="text-slate-200 text-3xl">Book your</p>
+          <p className="text-white text-9xl">dream tour</p>
+          <p className="text-slate-200 text-3xl">with us</p>
         </div>
       </div>
 

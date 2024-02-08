@@ -15,17 +15,17 @@ import Footer from "../../components/common_components/footer";
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className="relative bg-fixed bg-center bg-opacity-10 bg-[url('/destinations/dubai.jpg')] h-screen">
-        <div className="h-screen absolute top-1/3">
+      <div className="relative bg-fixed bg-center bg-opacity-10 bg-[url('/common/hero1.gif')] h-screen">
+        <div className="h-screen absolute top-1/3 backdrop-blur-sm">
           <Intro className=" w-screen"></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
       </div>
-      <div className="h-screen">
+      <div className="">
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div>
 
-      <div className="h-screen mb-10">
+      <div className=" mb-10">
         <HowItWorksTrial></HowItWorksTrial>
       </div>
 
