@@ -49,9 +49,8 @@ export default function DestiNationExpertise() {
       </div>
       <div className="w-screen overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start snap-x ">
         {destination.map((hello1) => (
-          <div className="pt-5">
+          <div key={hello1.dest} className="pt-5">
             <div
-              key={hello1.dest}
               className={`relative  hover:-translate-y-1 hover:scale-20 duration-300  rounded-5xl px-5`}
             >
               <div className="w-60 absolute top-2   bg-cover bg-center bg-[url('/common/Union.png')]">
