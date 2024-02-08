@@ -34,10 +34,10 @@ export default function destination() {
   return (
     <div className="w-screen my-auto">
       <div className="mt-10 pt-15 items-center ">
-        <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-white text-center font-roboto">
+        <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-white text-center font-sanchez">
           our top picks in Bali
         </h2>
-        <p className="text-base font-medium leading-7 text-white text-center font-roboto">
+        <p className="text-base font-medium leading-7 text-white text-center font-sanchez">
           In Bali, we experienced the local culture, had amazing food and party.
           The mesmerising views of Nusa Penida and views lush green surrounded
           waterfall are still in our eye
@@ -64,7 +64,7 @@ export default function destination() {
               </div>
             </div>
             <div className="m-1 md:pt-20 md:pr-20 sm:p-2 lg:pt-20 lg:pr-20 z-30 col-span-1">
-              <p className="text-black text-center md:text-lg lg:text-lg sm:text-sm font-roboto p-2">
+              <p className="text-black text-center md:text-lg lg:text-lg sm:text-sm font-sanchez p-2">
                 This is the description regarding the store owner and their
                 journey so far in travel space. This will include how many
                 countries they have travelled and how many destinations they are

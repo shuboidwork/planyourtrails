@@ -5,7 +5,7 @@ export default function HowItWorks() {
     <div className="w-full p-5 px-10">
       <div className=" my-5 items-center">
         <div className="text-center m-5">
-          <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-roboto">
+          <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-sanchez">
             How this works?
           </h2>
           <p className="text-base font-medium leading-7 text-dark-grey-600">
@@ -150,7 +150,7 @@ export default function HowItWorks() {
           </div>
         </div>
         <div className="text-center m-10">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-roboto">
+          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-sanchez">
             Why is this for you?
           </h2>
           <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-dark-grey-600 pt-3">
@@ -170,11 +170,11 @@ export function HowItWorksTrial() {
     <div className="w-full">
       <div className="px-5 ">
         <div className="flex">
-          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+          <p className="text-start font-sanchez bold text-4xl text-gray-200 ">
             how it works?
           </p>
         </div>
-        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+        <p className="text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
           We help you create a customise itinerary based on your requirement and
           give you package to directly book it.
         </p>
@@ -186,10 +186,10 @@ export function HowItWorksTrial() {
               <span className="text-base font-bold leading-7">1</span>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
                 Create your Enquiry
               </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto mt-5">
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
                 Share your preferred destination, your details so that we can
                 reach out to you.
               </p>
@@ -201,10 +201,10 @@ export function HowItWorksTrial() {
               <span className="text-base font-bold leading-7">2</span>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
                 Requirement call
               </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto mt-5">
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
                 Share your preferred destination, your details so that we can
                 reach out to you.
               </p>
@@ -216,10 +216,10 @@ export function HowItWorksTrial() {
               <span className="text-base font-bold leading-7">3</span>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
                 Creating curated itinerary
               </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto mt-5">
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
                 We will apply our travel brain and create a personalised curated
                 itinerary for you.
               </p>
@@ -231,10 +231,10 @@ export function HowItWorksTrial() {
               <span className="text-base font-bold leading-7">4</span>
             </div>
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-roboto">
+              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
                 Finalise your Travel Bookings
               </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-roboto mt-5">
+              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
                 We reach out to you with final itinerary and share package to
                 book. Once booked you are ready for an awesome travel experience
               </p>
@@ -244,12 +244,12 @@ export function HowItWorksTrial() {
       </div>
       <div className="px-5 py-5 ">
         <div className="flex">
-          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+          <p className="text-start font-sanchez bold text-4xl text-gray-200 ">
             why is this for you?
           </p>
         </div>
 
-        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+        <p className="text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
           We make sure the itinerary is experential and suitable for your travel
           type. We add offbeat places which are not usually visited by people.
           And to add we give exclusive travel deals in our packages

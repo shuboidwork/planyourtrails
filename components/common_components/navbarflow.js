@@ -8,14 +8,14 @@ export default function NavBarFlow() {
             className="h-8"
             alt="Store Logo"
           ></img>
-          <span className="self-center lg:text-2xl md:text-2xl sm:text-sm whitespace-nowrap text-white font-roboto">
+          <span className="self-center lg:text-2xl md:text-2xl sm:text-sm whitespace-nowrap text-white font-sanchez">
             Travel Store
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-white bg-black hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-white px-4 py-2 text-center font-roboto"
+            className="text-white bg-black hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-white px-4 py-2 text-center font-sanchez"
           >
             Sign In
           </button>

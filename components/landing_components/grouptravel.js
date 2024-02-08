@@ -34,11 +34,11 @@ export default function GroupTravel() {
     <div className="pt-5">
       <div className="px-5 ">
         <div className="flex">
-          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
+          <p className="text-start font-sanchez bold text-4xl text-gray-200 ">
             we host group trips too
           </p>
         </div>
-        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+        <p className="text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
           We will travel together along with like minded people for amazing
           experience you will remember for life!
         </p>

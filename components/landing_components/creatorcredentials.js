@@ -4,11 +4,11 @@ export default function CreatorCredentials() {
     <div className="w-screen mx-auto py-2">
       <div className="px-5 ">
         <div className="flex">
-          <p className="text-start font-roboto bold text-4xl text-black ">
+          <p className="text-start font-sanchez bold text-4xl text-black ">
             about us
           </p>
         </div>
-        <p className="text-base font-medium leading-7 text-gray-600 font-roboto mt-2 ">
+        <p className="text-base font-medium leading-7 text-gray-600 font-sanchez mt-2 ">
           This is the description regarding the store owner and their journey so
           far in travel space. This will include how many countries they have
           travelled and how many destinations they are expert in.
@@ -26,7 +26,7 @@ export default function CreatorCredentials() {
           ></img>
         </div>
         <div className="col-span-1 my-auto mt-5  hidden lg:block md:block">
-          <div className="text-black text-center  mt-20 bold text-2xl animate-pulse font-roboto">
+          <div className="text-black text-center  mt-20 bold text-2xl animate-pulse font-sanchez">
             Checkout our channels
           </div>
           <div className="">
@@ -58,7 +58,7 @@ export default function CreatorCredentials() {
         </div>
 
         <div className="mt-2 lg:mt-20 md:mt-20">
-          <div className="text-black bold text-xl font-roboto text-center">
+          <div className="text-black bold text-xl font-sanchez text-center">
             Collected Travel Magnets from 12+ countries
           </div>
           <img

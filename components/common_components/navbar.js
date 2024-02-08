@@ -11,7 +11,7 @@ export default function Navbar() {
           ></img>
 
           <div
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start pt-3 pl-2 font-roboto"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-white text-start pt-3 pl-2 font-sanchez"
             href="/"
           >
             Travel Store
@@ -20,7 +20,7 @@ export default function Navbar() {
       </Link>
 
       <Link
-        className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5 font-roboto "
+        className="font-bold lg:text-xl md:text-xl sm:text-sm text-white text-end p-2 justify-end m-5 font-sanchez "
         href="/signin"
       >
         <div className="col-span-1 sm:row-span-1 bg-blue-300 rounded-lg flex justify-center items-center">

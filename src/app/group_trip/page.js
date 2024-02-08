@@ -120,13 +120,13 @@ const itinerary = [
 
 export default function destination() {
   return (
-    <div className="w-screen my-auto font-roboto ">
+    <div className="w-screen my-auto font-sanchez ">
       <div className="w-screen pt-10 h-300">
         <div className="my-auto ">
-          <div className="text-white text-4xl bold  text-center font-roboto">
+          <div className="text-white text-4xl bold  text-center font-sanchez">
             Day wise itinerary
           </div>
-          <div className="text-white text-2xl text-center font-roboto">
+          <div className="text-white text-2xl text-center font-sanchez">
             Bali, 24th May 2024 - 31st May 2024
           </div>
 
@@ -150,7 +150,7 @@ export default function destination() {
                     style={{ "--image-url": `url(${activity.media_url})` }}
                     className={` bg-cover bg-opacity-50 bg-[image:var(--image-url)] w-40 h-40 rounded-bl-lg col-span-2 m-3`}
                   ></div>
-                  <div className=" text-sm  bold font-roboto text-center">
+                  <div className=" text-sm  bold font-sanchez text-center">
                     {activity.dest}
                   </div>
                 </div>
@@ -158,10 +158,10 @@ export default function destination() {
             </div>
 
             <div className=" col-span-1 border border-black bg-gray-900">
-              <p className="text-white bold md:text-lg lg:text-lg sm:text-sm p-2 font-roboto">
+              <p className="text-white bold md:text-lg lg:text-lg sm:text-sm p-2 font-sanchez">
                 {day.description}
               </p>
-              <ul class="list-none text-white p-2 font-roboto">
+              <ul class="list-none text-white p-2 font-sanchez">
                 <li>
                   Now this is a story all about how, my life got flipped-turned
                   upside down

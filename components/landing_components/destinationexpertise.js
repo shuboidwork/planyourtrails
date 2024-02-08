@@ -51,14 +51,14 @@ const destination = [
 
 export default function DestiNationExpertise() {
   return (
-    <div className="py-5 w-screen">
-      <div className="px-5 ">
-        <div className="flex">
-          <p className="text-start font-roboto bold text-4xl text-gray-200 ">
-            travel with us
+    <div className="py-5 w-screen ">
+      <div className="">
+        <div className="">
+          <p className="text-center font-sanchez bold text-4xl text-gray-200 ">
+            Travel like us
           </p>
         </div>
-        <p className="text-base font-medium leading-7 text-gray-300 font-roboto mt-2 ">
+        <p className=" text-center text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
           to destinations where we can give you tailor made itinerary and help
           you with all bookings
         </p>
@@ -83,7 +83,7 @@ export default function DestiNationExpertise() {
                   <img src="/elements/playbutton.png"></img>
                 </Link>
                 <div className="w-60 absolute bottom-2   bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="text-black text-2xl md:text-2xl  bold font-roboto text-center">
+                  <div className="text-black text-2xl md:text-2xl  bold font-sanchez text-center">
                     {hello1.dest}
                   </div>
                 </div>

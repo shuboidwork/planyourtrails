@@ -23,6 +23,7 @@ module.exports = {
       sans: ["sans-serif"],
       roboto: ["Roboto"],
       denton: ["Denton"],
+      sanchez: "var(--font-sanchez)",
     },
   },
 
