@@ -205,25 +205,23 @@ export function HowItWorksTrial() {
           give you package to directly book it.
         </p>
       </div>
-      <div className=" my-5 items-center pl-2 pr-2 ">
-        <div className="mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
-          {howSteps.map((step) => (
-            <div
-              key={step.id}
-              className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md shadow-inner shadow-white "
-            >
-              <div className="flex flex-col">
-                <img className="w-10 h-10 mb-3" src="/common/world.png"></img>
-                <h3 className="mb-2 text-xl text-dark-grey-900 font-sanchez">
-                  {step.tittle}
-                </h3>
-                <p className="text-dark-grey-600 font-sanchez font-sm">
-                  {step.description}
-                </p>
-              </div>
+      <div className=" my-5 items-center pl-2 pr-2 mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
+        {howSteps.map((step) => (
+          <div
+            key={step.id}
+            className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md shadow-inner shadow-white "
+          >
+            <div className="flex flex-col">
+              <img className="w-10 h-10 mb-3" src="/common/world.png"></img>
+              <h3 className="mb-2 text-xl text-dark-grey-900 font-sanchez">
+                {step.tittle}
+              </h3>
+              <p className="text-dark-grey-600 font-sanchez font-sm">
+                {step.description}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
       <div className="px-5 py-5 ">
         <div className="flex">

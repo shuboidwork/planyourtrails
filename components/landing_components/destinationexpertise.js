@@ -2,50 +2,34 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-function randangle() {
-  const arr_angle = [2, 3, 6, 12, 45];
-  const val = Math.floor(Math.random() * arr_angle.length);
-  const arr_direction = ["rotate-", "-rotate-"];
-  const dir = Math.floor(Math.random() * arr_direction.length);
-
-  return arr_direction[dir] + arr_angle[val];
-}
-
 const destination = [
   {
     dest: "Bali",
     url: "/destinations/bali.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Singapore",
     url: "/destinations/singapore.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Thailand",
     url: "/destinations/thailand.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Coorg",
     url: "/destinations/coorg.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Indonesia",
     url: "/destinations/indonesia.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Bir",
     url: "/destinations/dubai.jpg",
-    r_class: randangle(),
   },
   {
     dest: "Dubai",
     url: "/destinations/dubai.jpg",
-    r_class: randangle(),
   },
 ];
 
