@@ -1,5 +1,31 @@
 import LeadGen, { LeadGenNew } from "./leadgen";
 
+const howSteps = [
+  {
+    id: 1,
+    tittle: "Create your Enquiry",
+    description:
+      "Share your preferred destination, your details so that we can reach out to you",
+  },
+  {
+    id: 2,
+    tittle: "Requirement call",
+    description:
+      "Share your preferred destination, your details so that we can reach out to you",
+  },
+  {
+    id: 3,
+    tittle: "Creating curated itinerary",
+    description:
+      "Share your preferred destination, your details so that we can reach out to you",
+  },
+  {
+    id: 4,
+    tittle: "Finalise your Travel Bookings",
+    description:
+      "Share your preferred destination, your details so that we can reach out to you",
+  },
+];
 export default function HowItWorks() {
   return (
     <div className="w-full p-5 px-10">
@@ -179,67 +205,24 @@ export function HowItWorksTrial() {
           give you package to directly book it.
         </p>
       </div>
-      <div className=" my-5 items-center  px-10 ">
-        <div className="relative mt-30 lg:w-1/2 md:w-1/2 mx-auto">
-          <div className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
-            <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
-              <span className="text-base font-bold leading-7">1</span>
+      <div className=" my-5 items-center pl-2 pr-2 ">
+        <div className="mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
+          {howSteps.map((step) => (
+            <div
+              key={step.id}
+              className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md shadow-inner shadow-white "
+            >
+              <div className="flex flex-col">
+                <img className="w-10 h-10 mb-3" src="/common/world.png"></img>
+                <h3 className="mb-2 text-xl text-dark-grey-900 font-sanchez">
+                  {step.tittle}
+                </h3>
+                <p className="text-dark-grey-600 font-sanchez font-sm">
+                  {step.description}
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
-                Create your Enquiry
-              </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
-                Share your preferred destination, your details so that we can
-                reach out to you.
-              </p>
-            </div>
-          </div>
-
-          <div className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md s h-44 border-2 border-solid border-purple-blue-500 ">
-            <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
-              <span className="text-base font-bold leading-7">2</span>
-            </div>
-            <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
-                Requirement call
-              </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
-                Share your preferred destination, your details so that we can
-                reach out to you.
-              </p>
-            </div>
-          </div>
-
-          <div className="sticky top-20 shrink flex items-start gap-4 bg-offwhite p-3 my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500 ">
-            <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
-              <span className="text-base font-bold leading-7">3</span>
-            </div>
-            <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
-                Creating curated itinerary
-              </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
-                We will apply our travel brain and create a personalised curated
-                itinerary for you.
-              </p>
-            </div>
-          </div>
-
-          <div className="sticky top-20 shrink flex items-start gap-4 bg-offwhite p-3  my-3 rounded-md  h-44 border-2 border-solid border-purple-blue-500">
-            <div className="my-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-solid border-purple-blue-500 bg-transparent text-purple-blue-500">
-              <span className="text-base font-bold leading-7">4</span>
-            </div>
-            <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-dark-grey-900 font-sanchez">
-                Finalise your Travel Bookings
-              </h3>
-              <p className="text-base font-medium leading-7 text-dark-grey-600 font-sanchez mt-5">
-                We reach out to you with final itinerary and share package to
-                book. Once booked you are ready for an awesome travel experience
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
       <div className="px-5 py-5 ">

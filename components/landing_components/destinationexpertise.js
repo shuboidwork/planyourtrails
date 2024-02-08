@@ -63,16 +63,21 @@ export default function DestiNationExpertise() {
           you with all bookings
         </p>
       </div>
-      <div className="w-svw p-5 overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start scroll-pl-6 snap-x ">
+      <div className="w-screen overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start snap-x ">
         {destination.map((hello1) => (
-          <Link key={hello1.dest} href={"/destination"}>
+          <div className="pt-5">
             <div
               key={hello1.dest}
-              className={`mr-3 mt-5 relative  hover:-translate-y-1 hover:scale-20 duration-300  rounded-2xl w-80 h-96 `}
+              className={`relative  hover:-translate-y-1 hover:scale-20 duration-300  rounded-5xl px-5`}
             >
+              <div className="w-60 absolute top-2   bg-cover bg-center bg-[url('/common/Union.png')]">
+                <div className="text-black text-4xl md:text-2xl  bold font-sanchez text-center">
+                  {hello1.dest}
+                </div>
+              </div>
               <div
                 style={{ "--image-url": `url(${hello1.url})` }}
-                className={`static bg-cover bg-center bg-opacity-50 bg-[image:var(--image-url)] w-80 h-96 snap-center rounded-2xl `}
+                className={`static bg-cover bg-center bg-opacity-50 bg-[image:var(--image-url)] w-screen h-dvh snap-center `}
               >
                 <Link
                   href="https://www.youtube.com/watch?v=3-FhDl6hB4s"
@@ -82,14 +87,9 @@ export default function DestiNationExpertise() {
                 >
                   <img src="/elements/playbutton.png"></img>
                 </Link>
-                <div className="w-60 absolute bottom-2   bg-cover bg-center bg-[url('/common/Union.png')]">
-                  <div className="text-black text-2xl md:text-2xl  bold font-sanchez text-center">
-                    {hello1.dest}
-                  </div>
-                </div>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </div>

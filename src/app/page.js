@@ -25,11 +25,14 @@ export default function Home() {
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div>
 
-      <HowItWorksTrial></HowItWorksTrial>
-      <div className="w-screen bg-offwhite">
+      <div className="h-screen mb-10">
+        <HowItWorksTrial></HowItWorksTrial>
+      </div>
+
+      <div className="mt-20 w-screen bg-offwhite">
         <CreatorCredentials></CreatorCredentials>
       </div>
-      <div className="py-10">
+      <div className="h-screen w-screen">
         <GroupTravel></GroupTravel>
       </div>
 
