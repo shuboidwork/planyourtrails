@@ -1,7 +1,5 @@
 import "./globals.css";
-import Navbar from "../../components/common_components/navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import NavBarFlow from "../../components/common_components/navbarflow";
 import { Sanchez } from "next/font/google";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
@@ -17,6 +15,12 @@ const sanchez = Sanchez({
 });
 
 export default function RootLayout({ children }) {
+  // useEffect(() => {
+  //   const use = async () => {
+  //     (await import("tw-elements")).default;
+  //   };
+  //   use();
+  // }, []);
   return (
     <html
       lang="en"

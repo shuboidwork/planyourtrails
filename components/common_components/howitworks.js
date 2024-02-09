@@ -28,13 +28,13 @@ const howSteps = [
 ];
 export default function HowItWorks() {
   return (
-    <div className="w-full p-5 px-10">
-      <div className=" my-5 items-center">
+    <div className="w-full px-10">
+      <div className=" items-center">
         <div className="text-center m-5">
-          <h2 className="mb-5 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-sanchez">
+          <h2 className="mb-5 text-3xl font-extrabold leading-tight lg:text-4xl font-sanchez">
             How this works?
           </h2>
-          <p className="text-base font-medium leading-7 text-dark-grey-600">
+          <p className="text-base font-medium leading-7">
             We help you create a customise itinerary based on your requirement
             and give you package to directly book it.
           </p>
@@ -193,14 +193,12 @@ export default function HowItWorks() {
 
 export function HowItWorksTrial() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanblue to-white">
       <div className="px-5 ">
-        <div className="flex">
-          <p className="text-start font-sanchez bold text-4xl text-gray-200 ">
-            how it works?
-          </p>
-        </div>
-        <p className="text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
+        <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
+          how it works?
+        </p>
+        <p className="text-center font-medium font-sanchez mt-2 ">
           We help you create a customise itinerary based on your requirement and
           give you package to directly book it.
         </p>
@@ -209,34 +207,30 @@ export function HowItWorksTrial() {
         {howSteps.map((step) => (
           <div
             key={step.id}
-            className="sticky top-20 flex items-start gap-4 bg-offwhite  p-3 my-3 rounded-md shadow-inner shadow-white "
+            className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3 rounded-md shadow-lg shadow-oceanblue"
           >
-            <div className="flex flex-col">
+            <div className="flex flex-col items-center">
               <img className="w-10 h-10 mb-3" src="/common/world.png"></img>
-              <h3 className="mb-2 text-xl text-dark-grey-900 font-sanchez">
+              <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
                 {step.tittle}
               </h3>
-              <p className="text-dark-grey-600 font-sanchez font-sm">
+              <p className="text-obtext font-sanchez font-sm text-center">
                 {step.description}
               </p>
             </div>
           </div>
         ))}
       </div>
-      <div className="px-5 py-5 ">
-        <div className="flex">
-          <p className="text-start font-sanchez bold text-4xl text-gray-200 ">
-            why is this for you?
-          </p>
-        </div>
-
-        <p className="text-base font-medium leading-7 text-gray-300 font-sanchez mt-2 ">
+      <div className="">
+        <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
+          why is this for you?
+        </p>
+        <p className="text-center font-medium  text-black font-sanchez mt-2 ">
           We make sure the itinerary is experential and suitable for your travel
           type. We add offbeat places which are not usually visited by people.
           And to add we give exclusive travel deals in our packages
         </p>
       </div>
-      <LeadGenNew></LeadGenNew>={" "}
     </div>
   );
 }

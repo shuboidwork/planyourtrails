@@ -12,15 +12,23 @@ import LeadGen, {
   LeadGenNew,
 } from "../../components/common_components/leadgen";
 import Footer from "../../components/common_components/footer";
+import HorizontalDestinations from "../../components/landing_components/destinationexpertisenew";
+import dynamic from "next/dynamic";
+const DynamicComponent = dynamic(
+  () => import("../../components/landing_components/introcarousel"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (
     <div className="w-screen">
       <div className="relative h-screen sm:h-screen md:h-96 lg:h-96 ">
         <div className="">
-          <IntroCarousel></IntroCarousel>
+          <DynamicComponent></DynamicComponent>
         </div>
-        <div className="absolute top-1/2 backdrop-blur-sm">
+        <div className="absolute top-1/2 backdrop-blur-lg">
           <Intro className="w-screen"></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
@@ -30,18 +38,22 @@ export default function Home() {
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div> */}
 
+      <div>
+        <HorizontalDestinations></HorizontalDestinations>
+      </div>
+
       <div className="">
         <HowItWorksTrial></HowItWorksTrial>
       </div>
 
-      <div className="mt-20 w-screen bg-offwhite">
+      <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
       </div>
-      <div className="h-screen w-screen">
+      {/* <div className="h-screen w-screen">
         <GroupTravel></GroupTravel>
-      </div>
+      </div> */}
 
-      <div className="">
+      <div className="mt-20">
         <Footer></Footer>
       </div>
     </div>

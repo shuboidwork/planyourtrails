@@ -2,10 +2,10 @@ import Image from "next/image";
 export default function CreatorCredentials() {
   return (
     <div className="w-screen mx-auto py-2">
-      <div className="px-5 ">
+      {/* <div className="px-5 ">
         <div className="flex">
-          <p className="text-start font-sanchez bold text-4xl text-black ">
-            about us
+          <p className="text-start font-sanchez bold text-4xl text-oceanblue ">
+            why choose us
           </p>
         </div>
         <p className="text-base font-medium leading-7 text-gray-600 font-sanchez mt-2 ">
@@ -13,15 +13,15 @@ export default function CreatorCredentials() {
           far in travel space. This will include how many countries they have
           travelled and how many destinations they are expert in.
         </p>
-      </div>
+      </div> */}
       <div className="grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 md:grid-rows-1 lg:grid-row-1  sm:grid-rows-2">
         <div className="col-span-1 flex justify-center my-auto">
           <img
-            src="/common/creatorcred.jpg"
+            src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred1.jpg"
             className="-rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
           ></img>
           <img
-            src="/destinations/thailand.jpg"
+            src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred2.jpg"
             className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
           ></img>
         </div>
@@ -57,7 +57,7 @@ export default function CreatorCredentials() {
           </div>
         </div>
 
-        <div className="mt-2 lg:mt-20 md:mt-20">
+        {/* <div className="mt-2 lg:mt-20 md:mt-20">
           <div className="text-black bold text-xl font-sanchez text-center">
             Collected Travel Magnets from 12+ countries
           </div>
@@ -65,7 +65,7 @@ export default function CreatorCredentials() {
             src="/common/travelmagnet.png"
             className="w-30 h-60 object-contain items-center justify-center "
           ></img>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

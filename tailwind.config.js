@@ -9,6 +9,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
 
     "./node_modules/flowbite/**/*.js",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {
@@ -17,6 +18,8 @@ module.exports = {
         pblue: "#0f1e64",
         oceanblue: "#0066cc",
         offwhite: "#FAF9F6",
+        oceanbluelight: "#ecfbff",
+        obtext: "#0a3561",
       },
     },
     fontFamily: {
