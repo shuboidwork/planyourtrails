@@ -3,6 +3,7 @@ import Navbar from "../../components/common_components/navbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import NavBarFlow from "../../components/common_components/navbarflow";
 import { Sanchez } from "next/font/google";
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata = {
   title: "Your Travel Store",
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
       className={`w-screen overflow-x-hidden position-fixed ${sanchez.variable}`}
     >
       <SpeedInsights />
-      <body className=" bg-cover bg-black ">
+      <body className="">
         {/* <NavBarFlow className=""></NavBarFlow> */}
         {children}
       </body>
