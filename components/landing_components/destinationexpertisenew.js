@@ -27,7 +27,7 @@ const HorizontalScrollCarousel = () => {
     <div>
       <section
         ref={targetRef}
-        className="relative h-[300vh] bg-gradient-to-b from-white via-oceanbluelight to-white"
+        className="relative h-[300vh] bg-gradient-to-b from-offwhite via-oceanbluelight to-white"
       >
         <div className="flex h-48 items-center justify-center">
           <div className="">
