@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LeadGenNew } from "./leadgen";
+import LeadGenForm from "../landing_components/leadgenform";
 
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
             And helped around 8000 travelers with their travel planning.
           </p>
           <div className="mt-15">
-            <LeadGenNew></LeadGenNew>
+            <LeadGenForm></LeadGenForm>
           </div>
         </div>
         <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
