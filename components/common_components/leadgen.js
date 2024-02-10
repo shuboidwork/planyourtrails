@@ -1,3 +1,5 @@
+"use client";
+import * as React from "react";
 export default function LeadGen() {
   return (
     <div className="h-30 w-full flex justify-center">
@@ -82,7 +84,16 @@ export function LeadGenNew() {
   return (
     <div className="mt-10 h-30 w-screen flex justify-center ">
       <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-obtext rounded-sm flex justify-center items-center">
-        <button className="text-white bold text-center m-2 font-sanchez">
+        <button
+          onClick={React.useEffect(() => {
+            window.scrollTo({
+              bottom: 0,
+              behavior: "smooth",
+            });
+            // window is accessible here.
+          }, [])}
+          className="text-white bold text-center m-2 font-sanchez"
+        >
           Plan your trip now!
         </button>
       </div>
