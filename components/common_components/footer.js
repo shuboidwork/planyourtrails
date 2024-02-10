@@ -3,10 +3,10 @@ import { LeadGenNew } from "./leadgen";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center bg-gradient-to-b from-white to-oceanblue mx-auto ">
+    <div className="flex justify-center bg-gradient-to-b from-white to-oceanbluelight mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
-          <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-black text-center font-sanchez">
+          <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-center font-sanchez">
             Want us to plan your next trip?
           </h2>
           <p className="text-base font-medium leading-7 text-obtext text-center font-sanchez">

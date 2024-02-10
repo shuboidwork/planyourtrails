@@ -28,7 +28,7 @@ export default function Home() {
         <div className="">
           <DynamicComponent></DynamicComponent>
         </div>
-        <div className="absolute inset-x-0 top-2/3 backdrop-blur-lg">
+        <div className="absolute inset-x-0 top-5/6 backdrop-blur-lg">
           <Intro className="w-screen"></Intro>
           <LeadGenNew></LeadGenNew>
         </div>

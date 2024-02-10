@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         pgreen: "#37b8ab",
         pblue: "#0f1e64",
-        oceanblue: "#0066cc",
+        oceanblue: "#0857a0",
         offwhite: "#FAF9F6",
         oceanbluelight: "#ecfbff",
         obtext: "#0a3561",

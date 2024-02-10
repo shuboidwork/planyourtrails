@@ -4,24 +4,28 @@ const howSteps = [
   {
     id: 1,
     tittle: "Create your Enquiry",
+    icon_url: "/elements/sign-up.png",
     description:
       "Share your preferred destination, your details so that we can reach out to you",
   },
   {
     id: 2,
     tittle: "Requirement call",
+    icon_url: "/elements/phone-call.png",
     description:
       "Share your preferred destination, your details so that we can reach out to you",
   },
   {
     id: 3,
     tittle: "Creating curated itinerary",
+    icon_url: "/elements/destination.png",
     description:
       "Share your preferred destination, your details so that we can reach out to you",
   },
   {
     id: 4,
     tittle: "Finalise your Travel Bookings",
+    icon_url: "/elements/booking.png",
     description:
       "Share your preferred destination, your details so that we can reach out to you",
   },
@@ -193,10 +197,10 @@ export default function HowItWorks() {
 
 export function HowItWorksTrial() {
   return (
-    <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanblue to-white">
+    <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanbluelight to-white">
       <div className="px-5 ">
         <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
-          how it works?
+          How it works?
         </p>
         <p className="text-center font-medium font-sanchez mt-2 ">
           We help you create a customise itinerary based on your requirement and
@@ -210,7 +214,8 @@ export function HowItWorksTrial() {
             className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3 rounded-md shadow-lg shadow-oceanblue"
           >
             <div className="flex flex-col items-center">
-              <img className="w-10 h-10 mb-3" src="/common/world.png"></img>
+              <img className="w-10 h-10 mb-3" src={step.icon_url}></img>
+
               <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
                 {step.tittle}
               </h3>
