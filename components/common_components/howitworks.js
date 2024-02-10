@@ -211,7 +211,7 @@ export function HowItWorksTrial() {
         {howSteps.map((step) => (
           <div
             key={step.id}
-            className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3 rounded-md shadow-lg shadow-oceanblue"
+            className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3 rounded-md shadow-lg shadow-oceanbluelight"
           >
             <div className="flex flex-col items-center">
               <img className="w-10 h-10 mb-3" src={step.icon_url}></img>
