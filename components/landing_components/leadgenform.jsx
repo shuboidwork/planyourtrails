@@ -103,7 +103,6 @@ export default function LeadGenForm() {
               />
             </div>
           </div>
-          <hr className='h-1 bg-obtext'></hr>
 
                     <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-obtext">
