@@ -8,7 +8,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="mr-30 group relative h-[450px] w-[350px] overflow-hidden bg-neutral-200 rounded-md"
+      className="group relative h-[450px] w-[350px] overflow-hidden bg-neutral-200 rounded-md"
     >
       <div
         style={{
@@ -82,7 +82,7 @@ const destination = [
 
 export default function DestiNationExpertise() {
   return (
-    <div className="p-5 mt-10 w-screen h-full ">
+    <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center">
         <p className="text-center font-sanchez bold text-2xl text-oceanblue">
           Let us plan your dream vacation
