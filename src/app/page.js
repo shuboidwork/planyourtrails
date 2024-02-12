@@ -24,7 +24,7 @@ const DynamicComponent = dynamic(
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className=" relative bg-fixed bg-cover bg-center h-screen sm:h-screen md:h-96 lg:h-96 bg-[url('/common/himanisagar.gif')]">
+      <div className=" relative bg-fixed bg-center bg-contain h-screen sm:h-screen md:h-96 lg:h-96 bg-[url('/common/himanisagar.gif')]">
         {/* <div className="">
           <DynamicComponent></DynamicComponent>
         </div> */}

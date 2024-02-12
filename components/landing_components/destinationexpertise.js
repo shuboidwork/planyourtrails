@@ -85,7 +85,7 @@ export default function DestiNationExpertise() {
     <div className="p-5 mt-10 w-screen h-full ">
       <div className="h-48 items-center">
         <p className="text-center font-sanchez bold text-2xl text-oceanblue">
-          Let us plan your dream vacation for you
+          Let us plan your dream vacation
         </p>
         <p className="text-center font-medium font-sanchez text-lg mt-3 ">
           we our making travel planning easy through our travel experience to
