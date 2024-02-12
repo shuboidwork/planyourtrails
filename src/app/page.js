@@ -24,7 +24,11 @@ const DynamicComponent = dynamic(
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className=" relative bg-fixed bg-cover md:bg-contain bg-center h-screen sm:h-screen md:h-96 lg:h-96 bg-[url('https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/himanisagar.gif')]">
+      <div className=" relative">
+        <img
+          className="w-full object-cover h-screen sm:h-screen md:h-96 lg:h-96"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/himanisagar.gif"
+        ></img>
         {/* <div className="">
           <DynamicComponent></DynamicComponent>
         </div> */}
@@ -37,7 +41,7 @@ export default function Home() {
       {/* <div>
         <HorizontalDestinations></HorizontalDestinations>
       </div> */}
-      <div className="h-screen bg-fixed">
+      <div className="h-screen bg-scroll">
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div>
 

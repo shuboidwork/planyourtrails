@@ -31,7 +31,7 @@ export  function DestinationIntro({destination_text}) {
 
 export default function Intro() {
   return (
-      <div className="text-center bg-gradient-to-b from-transparent via-black to-transparent  font-sanchez">
+      <div className="text-center font-sanchez">
         <div className="">
           <p className="text-white text-3xl">your</p>
           <p className="text-white text-6xl ">Dream Vacation</p>       
