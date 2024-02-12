@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { InteractiveMarquee } from "../common_components/marquee";
+
 const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[450px] w-[350px] overflow-hidden bg-neutral-200 rounded-md"
+      className="mr-30 group relative h-[450px] w-[350px] overflow-hidden bg-neutral-200 rounded-md"
     >
       <div
         style={{
@@ -79,19 +82,23 @@ const destination = [
 
 export default function DestiNationExpertise() {
   return (
-    <div className="py-5 w-screen h-full ">
-      <div className="">
-        <div className="flex h-48 items-center">
-          <p className="text-center font-sanchez bold text-4xl text-oceanblue">
-            Let us plan your dream vacation for you
-          </p>
-          <p className="text-center font-medium font-sanchez text-2xl mt-2 ">
-            we our making travel planning easy through our travel experience to
-            make your dream trip come true
-          </p>
-        </div>
-        <div className="w-screen overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start snap-x gap-2 ">
-          {/* {destination.map((hello1) => (
+    <div className="p-5 mt-10 w-screen h-full ">
+      <div className="h-48 items-center">
+        <p className="text-center font-sanchez bold text-2xl text-oceanblue">
+          Let us plan your dream vacation for you
+        </p>
+        <p className="text-center font-medium font-sanchez text-lg mt-3 ">
+          we our making travel planning easy through our travel experience to
+          make your dream trip come true
+        </p>
+      </div>
+      {/* <InteractiveMarquee>
+        {destination.map((card) => {
+          return <Card card={card} key={card.id} />;
+        })}
+      </InteractiveMarquee> */}
+      <div className="w-screen overflow-auto overflow-y-hidden no-scrollbar grid grid-rows-1 grid-flow-col justify-start snap-x gap-2 ">
+        {/* {destination.map((hello1) => (
           <div key={hello1.dest} className="pt-5">
             <div
               className={`relative  hover:-translate-y-1 hover:scale-20 duration-300  rounded-5xl px-5`}
@@ -117,10 +124,9 @@ export default function DestiNationExpertise() {
             </div>
           </div>
         ))} */}
-          {destination.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </div>
+        {destination.map((card) => {
+          return <Card card={card} key={card.id} />;
+        })}
       </div>
     </div>
   );

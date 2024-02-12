@@ -28,19 +28,18 @@ export default function Home() {
         {/* <div className="">
           <DynamicComponent></DynamicComponent>
         </div> */}
+
         <div className="absolute  inset-x-0 bottom-12 bg-gradient-to-b from-transparent via-black via-80% to-transparent ">
           <Intro className="w-screen "></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
       </div>
-
-      <div className="h-screen">
-        <DestiNationExpertise className=""></DestiNationExpertise>
-      </div>
-
       {/* <div>
         <HorizontalDestinations></HorizontalDestinations>
       </div> */}
+      <div className="h-screen bg-fixed">
+        <DestiNationExpertise className=""></DestiNationExpertise>
+      </div>
 
       <div className="">
         <HowItWorksTrial></HowItWorksTrial>

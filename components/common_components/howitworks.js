@@ -227,34 +227,6 @@ export function HowItWorksTrial() {
           </div>
         ))}
       </div>
-      <div className="">
-        <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
-          Why should you plan your vacation through us?
-        </p>
-        <p className="text-center font-medium  text-black font-sanchez mt-2 ">
-          We make sure the itinerary is experential and suitable for your travel
-          type. We add offbeat places which are not usually visited by people.
-          And to add we give exclusive travel deals in our packages
-        </p>
-      </div>
-      <div className=" my-5 items-center pl-2 pr-2 mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
-        <div className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3">
-          <div className="flex flex-col items-center">
-            <img
-              className="w-10 h-10 mb-3"
-              src={"/elements/destination.png"}
-            ></img>
-
-            <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
-              Travel like us
-            </h3>
-            <p className="text-obtext font-sanchez font-sm text-center">
-              If you like the way we travel, we will suggest the exact same
-              stays, activities and experiences for you as well
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
