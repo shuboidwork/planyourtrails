@@ -24,23 +24,23 @@ const DynamicComponent = dynamic(
 export default function Home() {
   return (
     <div className="w-screen">
-      <div className="relative h-screen sm:h-screen md:h-96 lg:h-96 ">
-        <div className="">
+      <div className=" relative bg-fixed bg-cover bg-center h-screen sm:h-screen md:h-96 lg:h-96 bg-[url('/common/himanisagar.gif')]">
+        {/* <div className="">
           <DynamicComponent></DynamicComponent>
-        </div>
-        <div className="absolute inset-x-0 top-5/6 backdrop-blur-lg">
-          <Intro className="w-screen"></Intro>
+        </div> */}
+        <div className="absolute  inset-x-0 bottom-12 bg-gradient-to-b from-transparent via-black via-80% to-transparent ">
+          <Intro className="w-screen "></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
       </div>
 
-      {/* <div className="">
+      <div className="h-screen">
         <DestiNationExpertise className=""></DestiNationExpertise>
-      </div> */}
-
-      <div>
-        <HorizontalDestinations></HorizontalDestinations>
       </div>
+
+      {/* <div>
+        <HorizontalDestinations></HorizontalDestinations>
+      </div> */}
 
       <div className="">
         <HowItWorksTrial></HowItWorksTrial>
@@ -61,5 +61,3 @@ export default function Home() {
 }
 
 //"bg-gradient-to-r from-pink-500 via-purple-500 to-black opacity-30"
-
-//bg-[url('/destinations/indonesia.jpg')]

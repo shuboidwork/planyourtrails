@@ -31,11 +31,11 @@ export  function DestinationIntro({destination_text}) {
 
 export default function Intro() {
   return (
-      <div className="text-center text-black  font-sanchez">
+      <div className="text-center bg-gradient-to-b from-transparent via-black to-transparent  font-sanchez">
         <div className="">
-          <p className="text-obtext text-2xl">Book your</p>
-          <p className="text-oceanblue text-6xl ">dream tour</p>       
-          <p className="text-obtext text-2xl">with us</p>
+          <p className="text-white text-3xl">your</p>
+          <p className="text-white text-6xl ">Dream Vacation</p>       
+          <p className="text-white text-3xl">starts here</p>
         </div>
       </div>
 

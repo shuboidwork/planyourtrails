@@ -6,28 +6,28 @@ const howSteps = [
     tittle: "Create your Enquiry",
     icon_url: "/elements/sign-up.png",
     description:
-      "Share your preferred destination, your details so that we can reach out to you",
+      "Share your preferred destination, dates of travel and other details",
   },
   {
     id: 2,
-    tittle: "Requirement call",
+    tittle: "Understanding your requirement",
     icon_url: "/elements/phone-call.png",
     description:
-      "Share your preferred destination, your details so that we can reach out to you",
+      "Our team or we will set up a call with you to understrand your requirements in detail",
   },
   {
     id: 3,
-    tittle: "Creating curated itinerary",
+    tittle: "Get a customised itinerary ",
     icon_url: "/elements/destination.png",
     description:
-      "Share your preferred destination, your details so that we can reach out to you",
+      "We will plan the best possible trip for you which you can access by paying a small deposit. We will allow upto 2 iterations to the itinerary.",
   },
   {
     id: 4,
-    tittle: "Finalise your Travel Bookings",
+    tittle: "Book your dream trip ",
     icon_url: "/elements/booking.png",
     description:
-      "Share your preferred destination, your details so that we can reach out to you",
+      "We will make all the bookings for you - all the hotels, activities and flights so that you can sit back and relax.",
   },
 ];
 export default function HowItWorks() {
@@ -200,11 +200,12 @@ export function HowItWorksTrial() {
     <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanbluelight to-white">
       <div className="px-5 ">
         <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
-          How it works?
+          How do we do it?
         </p>
         <p className="text-center font-medium font-sanchez mt-2 ">
-          We help you create a customise itinerary based on your requirement and
-          give you package to directly book it.
+          using our travel experience we will plan the best trip for you as per
+          your taste and budget to any destination across the world in 4 simple
+          steps
         </p>
       </div>
       <div className=" my-5 items-center pl-2 pr-2 mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
@@ -228,13 +229,31 @@ export function HowItWorksTrial() {
       </div>
       <div className="">
         <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
-          why is this for you?
+          Why should you plan your vacation through us?
         </p>
         <p className="text-center font-medium  text-black font-sanchez mt-2 ">
           We make sure the itinerary is experential and suitable for your travel
           type. We add offbeat places which are not usually visited by people.
           And to add we give exclusive travel deals in our packages
         </p>
+      </div>
+      <div className=" my-5 items-center pl-2 pr-2 mt-30 w-5/6 lg:w-1/2 md:w-1/2 mx-auto ">
+        <div className="sticky top-20 h-48 flex items-start gap-4 bg-white  p-3 my-3">
+          <div className="flex flex-col items-center">
+            <img
+              className="w-10 h-10 mb-3"
+              src={"/elements/destination.png"}
+            ></img>
+
+            <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
+              Travel like us
+            </h3>
+            <p className="text-obtext font-sanchez font-sm text-center">
+              If you like the way we travel, we will suggest the exact same
+              stays, activities and experiences for you as well
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

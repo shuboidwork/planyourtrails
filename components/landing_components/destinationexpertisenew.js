@@ -63,7 +63,7 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-0 "
       ></div>
       <div className="absolute inset-x-0 bottom-0 z-10 grid place-content-center">
         <p className="bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl font-sanchez uppercase text-white backdrop-blur-sm">
