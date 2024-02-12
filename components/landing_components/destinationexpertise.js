@@ -88,7 +88,7 @@ export default function DestiNationExpertise() {
           Let us plan your dream vacation
         </p>
         <p className="text-center font-medium font-sanchez text-lg mt-3 ">
-          we our making travel planning easy through our travel experience to
+          we are making travel planning easy through our travel experience to
           make your dream trip come true
         </p>
       </div>
