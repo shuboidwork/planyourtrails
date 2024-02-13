@@ -29,11 +29,11 @@ export default function CreatorCredentials() {
         <div className="col-span-1 flex justify-center my-auto">
           <img
             src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred1.jpg"
-            className="-rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
+            className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
           ></img>
           <img
             src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred2.jpg"
-            className="rotate-12 w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
+            className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
           ></img>
         </div>
         <div className="col-span-1 my-auto mt-5  hidden lg:block md:block">

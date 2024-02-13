@@ -33,7 +33,7 @@ export default function Home() {
           <DynamicComponent></DynamicComponent>
         </div> */}
 
-        <div className="absolute  inset-x-0 bottom-12">
+        <div className="absolute  inset-x-0 bottom-20">
           <Intro className="w-screen "></Intro>
           <LeadGenNew></LeadGenNew>
         </div>
