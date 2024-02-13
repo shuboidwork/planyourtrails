@@ -198,8 +198,8 @@ export default function HowItWorks() {
 export function HowItWorksTrial() {
   return (
     <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanbluelight to-white">
-      <div className="px-5 ">
-        <p className="text-center font-sanchez bold text-4xl text-oceanblue ">
+      <div className="">
+        <p className="text-center font-sanchez bold text-3xl text-oceanblue ">
           How do we do it?
         </p>
         <p className="text-center font-medium font-sanchez mt-2 ">
@@ -217,7 +217,7 @@ export function HowItWorksTrial() {
             <div className="flex flex-col items-center">
               <img className="w-10 h-10 mb-3" src={step.icon_url}></img>
 
-              <h3 className="mb-2 text-lg text-oceanblue font-sanchez">
+              <h3 className="mb-2 text-lg text-oceanblue font-sanchez text-center">
                 {step.tittle}
               </h3>
               <p className="text-obtext font-sanchez font-sm text-center">

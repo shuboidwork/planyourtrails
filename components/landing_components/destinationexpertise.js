@@ -41,12 +41,12 @@ const destination = [
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/philippines2.jpg",
     title: "Philippines",
-    id: 6,
+    id: 3,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/thailand.jpg",
     title: "Thailand",
-    id: 3,
+    id: 4,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/kashmir.jpg",
@@ -66,17 +66,17 @@ const destination = [
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/thailand2.jpg",
     title: "Thailand",
-    id: 4,
+    id: 8,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/kashmir2.jpg",
     title: "Kashmir",
-    id: 8,
+    id: 9,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/himachal.jpg",
     title: "Himachal",
-    id: 9,
+    id: 10,
   },
 ];
 
@@ -84,7 +84,7 @@ export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center">
-        <p className="text-center font-sanchez bold text-2xl text-oceanblue">
+        <p className="text-center font-sanchez bold text-3xl text-oceanblue">
           Let us plan your dream vacation
         </p>
         <p className="text-center font-medium font-sanchez text-lg mt-3 ">

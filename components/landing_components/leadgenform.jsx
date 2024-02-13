@@ -1,49 +1,103 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-"use client"
-import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
+"use client";
+import { useState } from "react";
+import React from "react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Switch } from "@headlessui/react";
+import axios from "axios";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
+
+const SuccessModal = ({ onClose }) => {
+  return (
+    <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center">
+      <div className="p-8 border w-96 shadow-lg rounded-md bg-white">
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-gray-900">
+            Thank you for response
+          </h3>
+          <div className="mt-2 px-7 py-3">
+            <p className="text-lg text-gray-500">
+              We will get back to you soon with amazing travel plan. Stay tuned,
+              our team will reach out to you.
+            </p>
+          </div>
+          <div className="flex justify-center mt-4">
+            {/* Using useRouter to dismiss modal*/}
+            <button
+              onClick={onClose}
+              className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export default function LeadGenForm() {
-  const [agreed, setAgreed] = useState(false)
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+
+  async function createLead(formData) {
+    try {
+      // const response = await axios.post("{}/store/c2d29867-3d0b-d497-9191-18a9d8ee7830/leads", {
+      // store: 'c2d29867-3d0b-d497-9191-18a9d8ee7830',
+      // data: {
+      //     first_name: formData.get("first_name"),
+      //     last_name: formData.get("last_name"),
+      //     destination: formData.get("destination"),
+      //     email: formData.get("email"),
+      //     budget: formData.get("budget"),
+
+      //     // add more data if needed
+      //   },
+      // });
+      setIsSuccessModalOpen(true);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  const closeSuccessModal = () => {
+    setIsSuccessModalOpen(false);
+    window.location.reload();
+  };
+
+  const [agreed, setAgreed] = useState(false);
 
   return (
     <div className=" bg-white px-6 py-5 sm:py-5 lg:px-8 m-2 rounded-lg">
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form
+        action={createLead}
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+      >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               First name
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
+                name="first_name"
+                id="first_name"
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Last name
             </label>
             <div className="mt-2.5">
@@ -57,9 +111,11 @@ export default function LeadGenForm() {
             </div>
           </div>
 
-        
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Email
             </label>
             <div className="mt-2.5">
@@ -74,7 +130,10 @@ export default function LeadGenForm() {
           </div>
 
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="phone-number"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -104,8 +163,11 @@ export default function LeadGenForm() {
             </div>
           </div>
 
-                    <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-obtext">
+          <div>
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Destination
             </label>
             <div className="mt-2.5">
@@ -119,7 +181,10 @@ export default function LeadGenForm() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Tentative Dates
             </label>
             <div className="mt-2.5">
@@ -128,12 +193,15 @@ export default function LeadGenForm() {
                 id="date"
                 type="date"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-                defaultValue={''}
+                defaultValue={""}
               />
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-obtext">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
               Tentative Budget
             </label>
             <div className="mt-2.5">
@@ -141,13 +209,13 @@ export default function LeadGenForm() {
                 name="budget"
                 id="budget"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-                defaultValue={''}
+                defaultValue={""}
               >
                 <option>Upto Rs.50,000</option>
                 <option>Rs.50,000 to Rs.1,00,000</option>
                 <option>Rs.1,00,000 to Rs.2,00,000</option>
                 <option>Above Rs.2,00,000</option>
-                </select>
+              </select>
             </div>
           </div>
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
@@ -156,24 +224,24 @@ export default function LeadGenForm() {
                 checked={agreed}
                 onChange={setAgreed}
                 className={classNames(
-                  agreed ? 'bg-indigo-600' : 'bg-gray-200',
-                  'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  agreed ? "bg-indigo-600" : "bg-gray-200",
+                  "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 )}
               >
                 <span className="sr-only">Agree to policies</span>
                 <span
                   aria-hidden="true"
                   className={classNames(
-                    agreed ? 'translate-x-3.5' : 'translate-x-0',
-                    'h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out'
+                    agreed ? "translate-x-3.5" : "translate-x-0",
+                    "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
                   )}
                 />
               </Switch>
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{' '}
+              By selecting this, you agree to our{" "}
               <a href="#" className="font-semibold text-obtext">
-                tnc
+                Terms and Conditions
               </a>
               .
             </Switch.Label>
@@ -188,6 +256,7 @@ export default function LeadGenForm() {
           </button>
         </div>
       </form>
+      {isSuccessModalOpen && <SuccessModal onClose={closeSuccessModal} />}
     </div>
-  )
+  );
 }

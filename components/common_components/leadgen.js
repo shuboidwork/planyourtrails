@@ -1,5 +1,5 @@
 "use client";
-import * as React from "react";
+import React from "react";
 export default function LeadGen() {
   return (
     <div className="h-30 w-full flex justify-center">
@@ -80,18 +80,20 @@ export function LeadGenGroup() {
   );
 }
 
-export function LeadGenNew() {
+export function LeadGenNew({ scrollCallback }) {
+  // const scrollToBottom = () => {
+  //   const scrollHeight = document.body.scrollHeight;
+  //   const offset = 200;
+  //   window.scrollTo({
+  //     top: document.body.scrollHeight - offset,
+  //     behavior: "smooth", // Optionally add smooth scrolling behavior
+  //   });
+  // };
   return (
     <div className="mt-10 h-30 w-screen flex justify-center ">
       <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-obtext rounded-sm flex justify-center items-center">
         <button
-          onClick={React.useEffect(() => {
-            window.scrollTo({
-              bottom: 0,
-              behavior: "smooth",
-            });
-            // window is accessible here.
-          }, [])}
+          onClick={scrollCallback}
           className="text-white bold text-center m-2 font-sanchez"
         >
           Plan your trip now!

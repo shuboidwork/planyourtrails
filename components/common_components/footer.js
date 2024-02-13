@@ -18,62 +18,33 @@ export default function Footer() {
             <LeadGenForm></LeadGenForm>
           </div>
         </div>
-        <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
-          <div className="flex items-start gap-4">
-            <div className="flex flex-col  border-white border-10">
-              <h3 className="mb-2 text-base font-bold leading-tight text-obtext font-sanchez">
-                Follow us on Instagram
-              </h3>
-              <div className="flex justify-center">
-                <img
-                  src="/common/instagram.svg"
-                  className="w-20 h-20 object-contain"
-                ></img>
-                <div>
-                  <div className=" text-obtext md:text-lg sm:text-sm bold mt-3 ml-2 font-sanchez">
-                    Instagram
-                  </div>
-                  <div className="text-obtext ml-2 font-sanchez">
-                    300k Subscribers
-                  </div>
-                </div>
-              </div>
-            </div>
+        <h3 className="text-center text-obtext text-lg"> Follow us on </h3>
+        <div className="flex w-full items-center justify-center gap-7">
+          <div>
+            <img
+              src="/elements/instagram.png"
+              className="w-10 h-10 object-contain "
+            ></img>
           </div>
-          <div className="flex items-start gap-4">
-            <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-obtext font-sanchez">
-                Follow us on Youtube
-              </h3>
-              <div className="flex justify-center">
-                <img
-                  src="/common/youtube.svg"
-                  className="w-20 h-20 object-contain"
-                ></img>
-                <div>
-                  <div className=" text-obtext md:text-lg sm:text-sm bold mt-3 ml-2 font-sanchez">
-                    Youtube
-                  </div>
-                  <div className="text-gray-700 ml-2 font-sanchez">
-                    100k Subscribers
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div>
+            <img
+              src="/elements/youtube.png"
+              className="w-12 h-12 object-contain"
+            ></img>
           </div>
         </div>
 
-        <div className="flex justify-center items-center mt-10">
-          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-sanchez">
+        <div className="flex justify-center items-center my-10">
+          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-sanchez">
             Powered by
           </div>
           <img
-            src="/common/instagram.svg"
+            src="/elements/cupcake.png"
             className="w-10 h-10 object-contain"
           ></img>
 
           <Link
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-sanchez"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-sanchez"
             href="/"
           >
             Pastree
