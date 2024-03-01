@@ -50,7 +50,7 @@ const TermsAndConditions = () => {
         </p>
         <p className="mb-4">
           3.2 Cancellation fees may apply, and refunds are subject to
-          Wandertwoways' cancellation policy.
+          Wandertwoways cancellation policy.
         </p>
         <p className="mb-4">
           3.3 In case of cancellation due to a mishap (such as natural
