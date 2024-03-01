@@ -35,7 +35,7 @@ export default function HowItWorks() {
     <div className="w-full px-10">
       <div className=" items-center">
         <div className="text-center m-5">
-          <h2 className="mb-5 text-3xl font-extrabold leading-tight lg:text-4xl font-sanchez">
+          <h2 className="mb-5 text-3xl font-extrabold leading-tight lg:text-4xl font-merriweather">
             How this works?
           </h2>
           <p className="text-base font-medium leading-7">
@@ -180,7 +180,7 @@ export default function HowItWorks() {
           </div>
         </div>
         <div className="text-center m-10">
-          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-sanchez">
+          <h2 className="mb-2 text-3xl font-extrabold leading-tight text-dark-grey-900 lg:text-4xl font-merriweather">
             Why is this for you?
           </h2>
           <p className="text-base font-medium lg:text-xl sm:text-sm leading-7 text-dark-grey-600 pt-3">
@@ -199,10 +199,10 @@ export function HowItWorksTrial() {
   return (
     <div className="w-full bg-cover bg-gradient-to-b from-white via-oceanbluelight to-white">
       <div className="">
-        <p className="text-center font-sanchez bold text-3xl text-oceanblue ">
+        <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
           How do we do it?
         </p>
-        <p className="text-center font-medium font-sanchez mt-2 ">
+        <p className="text-center font-medium font-merriweather mt-2 ">
           using our travel experience we will plan the best trip for you as per
           your taste and budget to any destination across the world in 4 simple
           steps
@@ -217,10 +217,10 @@ export function HowItWorksTrial() {
             <div className="flex flex-col items-center">
               <img className="w-10 h-10 mb-3" src={step.icon_url}></img>
 
-              <h3 className="mb-2 text-lg text-oceanblue font-sanchez text-center">
+              <h3 className="mb-2 text-lg text-oceanblue font-merriweather text-center">
                 {step.tittle}
               </h3>
-              <p className="text-obtext font-sanchez font-sm text-center">
+              <p className="text-obtext font-merriweather font-sm text-center">
                 {step.description}
               </p>
             </div>

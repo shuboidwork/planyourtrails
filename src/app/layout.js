@@ -1,6 +1,7 @@
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Sanchez } from "next/font/google";
+import { Merriweather } from "next/font/google";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata = {
@@ -13,6 +14,11 @@ const sanchez = Sanchez({
   subsets: ["latin"],
   variable: "--font-sanchez",
 });
+const merriweather = Merriweather({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+});
 
 export default function RootLayout({ children }) {
   // useEffect(() => {
@@ -24,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`w-screen overflow-x-hidden position-fixed ${sanchez.variable}`}
+      className={`w-screen overflow-x-hidden position-fixed ${merriweather.variable}`}
     >
       <SpeedInsights />
       <body className="">

@@ -27,6 +27,7 @@ module.exports = {
       roboto: ["Roboto"],
       denton: ["Denton"],
       sanchez: "var(--font-sanchez)",
+      merriweather: "var(--font-merriweather)",
     },
   },
 

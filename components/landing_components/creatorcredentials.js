@@ -6,21 +6,21 @@ export default function CreatorCredentials() {
       <div className="w-screen mx-auto py-2">
         {/* <div className="px-5 ">
         <div className="flex">
-          <p className="text-start font-sanchez bold text-4xl text-oceanblue ">
+          <p className="text-start font-merriweather bold text-4xl text-oceanblue ">
             why choose us
           </p>
         </div>
-        <p className="text-base font-medium leading-7 text-gray-600 font-sanchez mt-2 ">
+        <p className="text-base font-medium leading-7 text-gray-600 font-merriweather mt-2 ">
           This is the description regarding the store owner and their journey so
           far in travel space. This will include how many countries they have
           travelled and how many destinations they are expert in.
         </p>
       </div> */}
         <div className="mt-10">
-          <p className="text-center font-sanchez bold text-3xl text-oceanblue ">
+          <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
             Why should you plan your vacation through us?
           </p>
-          <p className="text-center font-medium  text-black font-sanchez mt-2 ">
+          <p className="text-center font-medium  text-black font-merriweather mt-2 ">
             We make sure the itinerary is experential and suitable for your
             travel type. We add offbeat places which are not usually visited by
             people. And to add we give exclusive travel deals in our packages
@@ -47,10 +47,10 @@ export default function CreatorCredentials() {
               src={"/elements/passport.png"}
             ></img>
 
-            <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
+            <h3 className="mb-2 text-xl text-oceanblue font-merriweather">
               Travel like us
             </h3>
-            <p className="text-obtext font-sanchez font-sm text-center">
+            <p className="text-obtext font-merriweather font-sm text-center">
               If you like the way we travel, we will suggest the exact same
               stays, activities and experiences for you as well
             </p>
@@ -64,10 +64,10 @@ export default function CreatorCredentials() {
               src={"/elements/rating.png"}
             ></img>
 
-            <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
+            <h3 className="mb-2 text-xl text-oceanblue font-merriweather">
               Best Possible Experience
             </h3>
-            <p className="text-obtext font-sanchez font-sm text-center">
+            <p className="text-obtext font-merriweather font-sm text-center">
               From our travel eperience we know how to best travel and enjoy
               within a particular budget
             </p>
@@ -80,10 +80,10 @@ export default function CreatorCredentials() {
               src={"/elements/money.png"}
             ></img>
 
-            <h3 className="mb-2 text-xl text-oceanblue font-sanchez">
+            <h3 className="mb-2 text-xl text-oceanblue font-merriweather">
               Save Money & Time
             </h3>
-            <p className="text-obtext font-sanchez font-sm text-center">
+            <p className="text-obtext font-merriweather font-sm text-center">
               You can relax, since we will be doing all the planning to get you
               the best stays, activities within your budget
             </p>

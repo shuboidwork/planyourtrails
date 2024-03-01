@@ -19,7 +19,7 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 "
       ></div>
       <div className="absolute inset-x-0 bottom-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl font-sanchez uppercase text-white backdrop-blur-sm">
+        <p className="bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl font-merriweather uppercase text-white backdrop-blur-sm">
           {card.title}
         </p>
       </div>
@@ -84,10 +84,10 @@ export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center">
-        <p className="text-center font-sanchez bold text-3xl text-oceanblue">
+        <p className="text-center font-merriweather bold text-3xl text-oceanblue">
           Let us plan your dream vacation
         </p>
-        <p className="text-center font-medium font-sanchez text-lg mt-3 ">
+        <p className="text-center font-medium font-merriweather text-lg mt-3 ">
           we are making travel planning easy through our travel experience to
           make your dream trip come true
         </p>
@@ -104,7 +104,7 @@ export default function DestiNationExpertise() {
               className={`relative  hover:-translate-y-1 hover:scale-20 duration-300  rounded-5xl px-5`}
             >
               <div className="w-60 absolute top-2   bg-cover bg-center bg-[url('/common/Union.png')]">
-                <div className="text-black text-4xl md:text-2xl  bold font-sanchez text-center">
+                <div className="text-black text-4xl md:text-2xl  bold font-merriweather text-center">
                   {hello1.dest}
                 </div>
               </div>

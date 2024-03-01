@@ -7,10 +7,10 @@ export default function Footer() {
     <div className="flex justify-center bg-gradient-to-b from-white to-oceanbluelight mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
-          <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-center font-sanchez">
+          <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-center font-merriweather">
             Want us to plan your next trip?
           </h2>
-          <p className="text-base font-medium leading-7 text-obtext text-center font-sanchez">
+          <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
             We share informative content on our instagram and youtube channel.
             And helped around 8000 travelers with their travel planning.
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center items-center my-10">
-          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-sanchez">
+          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather">
             Powered by
           </div>
           <img
@@ -44,7 +44,7 @@ export default function Footer() {
           ></img>
 
           <Link
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-sanchez"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather"
             href="/"
           >
             Pastree
@@ -60,10 +60,10 @@ export function FooterGroup() {
     <div className="flex justify-center bg-offwhite mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
-          <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-sanchez">
+          <h2 className="mb-2 text-3xl leading-tight text-dark-grey-900 lg:text-4xl text-black text-center font-merriweather">
             Want to join us on our next group trip?
           </h2>
-          <p className="text-base font-medium leading-7 text-black text-center font-sanchez">
+          <p className="text-base font-medium leading-7 text-black text-center font-merriweather">
             Share your information with us, we will reach out to you once we
             have next trip planned.
           </p>
@@ -74,7 +74,7 @@ export function FooterGroup() {
         <div className=" mt-20 flex w-full flex-col items-center justify-center gap-y-10 lg:flex-row lg:gap-x-8 lg:gap-y-0 xl:gap-x-10">
           <div className="flex items-start gap-4">
             <div className="flex flex-col  border-white border-10">
-              <h3 className="mb-2 text-base font-bold leading-tight text-black font-sanchez">
+              <h3 className="mb-2 text-base font-bold leading-tight text-black font-merriweather">
                 Follow us on Instagram
               </h3>
               <div className="flex justify-center">
@@ -83,10 +83,10 @@ export function FooterGroup() {
                   className="w-20 h-20 object-contain"
                 ></img>
                 <div>
-                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-sanchez">
+                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-merriweather">
                     Instagram
                   </div>
-                  <div className="text-black ml-2 font-sanchez">
+                  <div className="text-black ml-2 font-merriweather">
                     300k Subscribers
                   </div>
                 </div>
@@ -95,7 +95,7 @@ export function FooterGroup() {
           </div>
           <div className="flex items-start gap-4">
             <div className="flex flex-col">
-              <h3 className="mb-2 text-base font-bold leading-tight text-black font-sanchez">
+              <h3 className="mb-2 text-base font-bold leading-tight text-black font-merriweather">
                 Follow us on Youtube
               </h3>
               <div className="flex justify-center">
@@ -104,10 +104,10 @@ export function FooterGroup() {
                   className="w-20 h-20 object-contain"
                 ></img>
                 <div>
-                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-sanchez">
+                  <div className=" text-black md:text-lg sm:text-sm bold mt-3 ml-2 font-merriweather">
                     Youtube
                   </div>
-                  <div className="text-gray-700 ml-2 font-sanchez">
+                  <div className="text-gray-700 ml-2 font-merriweather">
                     100k Subscribers
                   </div>
                 </div>
@@ -117,7 +117,7 @@ export function FooterGroup() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-sanchez">
+          <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-merriweather">
             Powered by
           </div>
           <img
@@ -126,7 +126,7 @@ export function FooterGroup() {
           ></img>
 
           <Link
-            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-sanchez"
+            className="font-bold lg:text-xl  md:text-xl sm:text-sm text-black text-start p-2 font-merriweather"
             href="/"
           >
             Pastree
