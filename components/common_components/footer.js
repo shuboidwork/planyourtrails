@@ -12,7 +12,7 @@ export default function Footer() {
           </h2>
           <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
             We share informative content on our instagram and youtube channel.
-            And helped around 8000 travelers with their travel planning.
+            And helped many travelers with their travel planning.
           </p>
           <div className="mt-15">
             <LeadGenForm></LeadGenForm>
@@ -21,33 +21,40 @@ export default function Footer() {
         <h3 className="text-center text-obtext text-lg"> Follow us on </h3>
         <div className="flex w-full items-center justify-center gap-7">
           <div>
+            <Link
+              href={"https://www.instagram.com/wanderlust_himani/?hl=en"}
+            ></Link>
             <img
               src="/elements/instagram.png"
               className="w-10 h-10 object-contain "
             ></img>
           </div>
           <div>
-            <img
-              src="/elements/youtube.png"
-              className="w-12 h-12 object-contain"
-            ></img>
+            <Link
+              href={"https://www.youtube.com/channel/UCdy40TK-wlSg-Ea2FEo7ohw"}
+            >
+              <img
+                src="/elements/youtube.png"
+                className="w-12 h-12 object-contain"
+              ></img>
+            </Link>
           </div>
         </div>
 
         <div className="flex justify-center items-center my-10">
           <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather">
-            Powered by
+            All rights reserved by
           </div>
-          <img
+          {/* <img
             src="/elements/cupcake.png"
             className="w-10 h-10 object-contain"
-          ></img>
+          ></img> */}
 
           <Link
             className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather"
             href="/"
           >
-            Pastree
+            Wandertwoways
           </Link>
         </div>
       </div>
