@@ -5,8 +5,8 @@ import { Merriweather } from "next/font/google";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata = {
-  title: "Your Travel Store",
-  description: "Powered By Pastree",
+  title: "Wandertwoways",
+  description: "by Himani and Sagar",
 };
 
 const sanchez = Sanchez({
