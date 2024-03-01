@@ -60,10 +60,12 @@ export default function LeadGenForm() {
           // add more data if needed
         },
       });
-      setIsSuccessModalOpen(true);
+      
     } catch (error) {
+      
       console.log(error);
     }
+    setIsSuccessModalOpen(true);
   }
   const closeSuccessModal = () => {
     setIsSuccessModalOpen(false);
