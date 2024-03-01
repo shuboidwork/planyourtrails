@@ -45,18 +45,21 @@ export default function LeadGenForm() {
 
   async function createLead(formData) {
     try {
-      // const response = await axios.post("{}/store/c2d29867-3d0b-d497-9191-18a9d8ee7830/leads", {
-      // store: 'c2d29867-3d0b-d497-9191-18a9d8ee7830',
-      // data: {
-      //     first_name: formData.get("first_name"),
-      //     last_name: formData.get("last_name"),
-      //     destination: formData.get("destination"),
-      //     email: formData.get("email"),
-      //     budget: formData.get("budget"),
+      const response = await axios.post("http://13.234.236.61:8000/store/S170928001000015930302999376402427/leads", {
+      store: 'S170928001000015930302999376402427',
+      data: {
+          first_name: formData.get("first_name"),
+          last_name: formData.get("last_name"),
+          destination: formData.get("destination"),
+          email: formData.get("email"),
+          budget: formData.get("budget"),
+          phone: formData.get("phone-number"),
+          country_code: "91",
 
-      //     // add more data if needed
-      //   },
-      // });
+
+          // add more data if needed
+        },
+      });
       setIsSuccessModalOpen(true);
     } catch (error) {
       console.log(error);
@@ -103,8 +106,8 @@ export default function LeadGenForm() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="last-name"
-                id="last-name"
+                name="last_name"
+                id="last_name"
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
