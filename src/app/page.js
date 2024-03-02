@@ -27,7 +27,11 @@ export default function Home() {
     <div className="w-screen">
       <div className=" relative">
         <img
-          className="w-full object-cover h-screen sm:h-screen md:h-96 lg:h-96"
+          className="w-full object-cover h-screen hidden lg:block md:block"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/new_carousel_hs_large.gif"
+        ></img>
+        <img
+          className="w-full object-cover h-screen lg:hidden md:hidden"
           src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/new_carousel_hs.gif"
         ></img>
 
