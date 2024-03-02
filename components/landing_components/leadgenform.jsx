@@ -52,7 +52,6 @@ export default function LeadGenForm() {
           last_name: formData.get("last_name"),
           destination: formData.get("destination"),
           email: formData.get("email"),
-          budget: formData.get("budget"),
           phone: formData.get("phone-number"),
           country_code: "91",
 
@@ -173,7 +172,7 @@ export default function LeadGenForm() {
               htmlFor="last-name"
               className="block text-sm font-semibold leading-6 text-obtext"
             >
-              Destination
+              Destination (also,if any comments)
             </label>
             <div className="mt-2.5">
               <input
@@ -185,7 +184,7 @@ export default function LeadGenForm() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          {/* <div className="sm:col-span-2">
             <label
               htmlFor="message"
               className="block text-sm font-semibold leading-6 text-obtext"
@@ -222,7 +221,7 @@ export default function LeadGenForm() {
                 <option>Above Rs.2,00,000</option>
               </select>
             </div>
-          </div>
+          </div> */}
           <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
               <Switch
