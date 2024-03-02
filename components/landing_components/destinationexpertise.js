@@ -89,7 +89,7 @@ export default function DestiNationExpertise() {
         </p>
         <p className="text-center font-medium font-merriweather mt-3 ">
           Meet <div className="font-abril text-xl">Himani & Sagar </div> a full
-          time travelling couple sharing their journey with the world"
+          time travelling couple sharing their journey with the world
         </p>
       </div>
       {/* <InteractiveMarquee>
