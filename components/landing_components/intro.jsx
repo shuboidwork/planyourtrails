@@ -1,4 +1,6 @@
+import localFont from "next/font/local";
 
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
 
 export  function GroupTravelIntro() {
   return (
@@ -31,7 +33,7 @@ export  function DestinationIntro({destination_text}) {
 
 export default function Intro() {
   return (
-      <div className="text-center font-abril">
+      <div className={`text-center ${myFont.className}`}>
         <div className="">
           <p className="text-white text-3xl">your</p>
           <p className="text-white text-6xl ">Dream Vacation</p>       

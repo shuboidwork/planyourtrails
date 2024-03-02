@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { InteractiveMarquee } from "../common_components/marquee";
+
+import localFont from "next/font/local";
+
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
 
 const Card = ({ card }) => {
   return (
@@ -84,7 +84,9 @@ export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center px-2">
-        <p className="text-center font-abril bold text-3xl text-oceanblue">
+        <p
+          className={`text-center bold text-3xl text-oceanblue ${myFont.className}`}
+        >
           Wander Two Ways
         </p>
         <p className="text-center font-medium font-merriweather mt-3 ">
