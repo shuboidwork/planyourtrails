@@ -19,7 +19,9 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 "
       ></div>
       <div className="absolute inset-x-0 bottom-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl font-merriweather uppercase text-white backdrop-blur-sm">
+        <p
+          className={`bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl ${myFont.className} uppercase text-white backdrop-blur-sm`}
+        >
           {card.title}
         </p>
       </div>
