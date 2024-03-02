@@ -2,6 +2,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Sanchez } from "next/font/google";
 import { Merriweather } from "next/font/google";
+import { Abril_Fatface } from "next/font/google";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata = {
@@ -19,6 +20,11 @@ const merriweather = Merriweather({
   subsets: ["latin"],
   variable: "--font-merriweather",
 });
+const abril = Abril_Fatface({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-abril",
+});
 
 export default function RootLayout({ children }) {
   // useEffect(() => {
@@ -30,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`w-screen overflow-x-hidden position-fixed ${merriweather.variable}`}
+      className={`w-screen overflow-x-hidden position-fixed ${merriweather.variable}  ${abril.variable} `}
     >
       <SpeedInsights />
       <body className="">

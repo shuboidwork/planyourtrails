@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/*.css",
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
@@ -28,6 +29,7 @@ module.exports = {
       denton: ["Denton"],
       sanchez: "var(--font-sanchez)",
       merriweather: "var(--font-merriweather)",
+      abril: "var(--font-abril)",
     },
   },
 

@@ -84,12 +84,12 @@ export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center">
-        <p className="text-center font-merriweather bold text-3xl text-oceanblue">
-          Let us plan your dream vacation
+        <p className="text-center font-abril bold text-3xl text-oceanblue">
+          Wander Two Ways
         </p>
         <p className="text-center font-medium font-merriweather mt-3 ">
-          we are making travel planning easy through our travel experience to
-          make your dream trip come true
+          Meet <div className="font-abril text-xl">Himani & Sagar </div> a full
+          time travelling couple sharing their journey with the world"
         </p>
       </div>
       {/* <InteractiveMarquee>

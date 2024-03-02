@@ -31,7 +31,7 @@ export  function DestinationIntro({destination_text}) {
 
 export default function Intro() {
   return (
-      <div className="text-center font-merriweather">
+      <div className="text-center font-abril">
         <div className="">
           <p className="text-white text-3xl">your</p>
           <p className="text-white text-6xl ">Dream Vacation</p>       

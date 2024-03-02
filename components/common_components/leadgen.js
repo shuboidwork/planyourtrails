@@ -94,7 +94,7 @@ export function LeadGenNew({ scrollCallback }) {
       <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-obtext rounded-sm flex justify-center items-center">
         <button
           onClick={scrollCallback}
-          className="text-white bold text-center m-2 font-sanchez"
+          className="text-white bold text-center m-2 font-merriweather"
         >
           Plan your trip now!
         </button>
