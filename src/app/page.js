@@ -28,7 +28,8 @@ export default function Home() {
       <div className=" relative">
         <img
           className="w-full object-cover h-screen sm:h-screen md:h-96 lg:h-96"
-          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/himanisagar.gif"
+          src="/common/new_carousel_hd.gif"
+          // src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/himanisagar.gif"
         ></img>
 
         <div className="absolute  inset-x-0 bottom-20">
