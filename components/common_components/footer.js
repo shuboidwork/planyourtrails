@@ -22,12 +22,15 @@ export default function Footer() {
         <div className="flex w-full items-center justify-center gap-7">
           <div>
             <Link
-              href={"https://www.instagram.com/wanderlust_himani/?hl=en"}
-            ></Link>
-            <img
-              src="/elements/instagram.png"
-              className="w-10 h-10 object-contain "
-            ></img>
+              href={
+                "https://www.instagram.com/wanderlust_himani?igsh=MWZ6ZnlkeGNra2MzNA=="
+              }
+            >
+              <img
+                src="/elements/instagram.png"
+                className="w-10 h-10 object-contain "
+              ></img>
+            </Link>
           </div>
           <div>
             <Link
