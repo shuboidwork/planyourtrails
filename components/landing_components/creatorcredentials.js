@@ -20,7 +20,7 @@ export default function CreatorCredentials() {
           <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
             Why should you plan your vacation through us?
           </p>
-          <p className="text-center font-medium  text-black font-merriweather mt-2 ">
+          <p className="text-center font-medium  text-black font-merriweather mt-3 px-3 ">
             We make sure the itinerary is experential and suitable for your
             travel type. We add offbeat places which are not usually visited by
             people. And to add we give exclusive travel deals in our packages

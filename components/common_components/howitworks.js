@@ -202,7 +202,7 @@ export function HowItWorksTrial() {
         <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
           How do we do it?
         </p>
-        <p className="text-center font-medium font-merriweather mt-2 ">
+        <p className="text-center font-medium font-merriweather mt-2 px-3 ">
           using our travel experience we will plan the best trip for you as per
           your taste and budget to any destination across the world in 4 simple
           steps

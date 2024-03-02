@@ -83,13 +83,13 @@ const destination = [
 export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
-      <div className="h-48 items-center">
+      <div className="h-48 items-center px-2">
         <p className="text-center font-abril bold text-3xl text-oceanblue">
           Wander Two Ways
         </p>
         <p className="text-center font-medium font-merriweather mt-3 ">
-          Meet <div className="font-abril text-xl">Himani & Sagar </div> a full
-          time travelling couple sharing their journey with the world
+          Meet <div className="font-abril text-xl pb-2">Himani & Sagar </div> a
+          full time travelling couple sharing their journey with the world
         </p>
       </div>
       {/* <InteractiveMarquee>
