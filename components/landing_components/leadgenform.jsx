@@ -184,72 +184,14 @@ export default function LeadGenForm() {
               />
             </div>
           </div>
-          {/* <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block text-sm font-semibold leading-6 text-obtext"
-            >
-              Tentative Dates
-            </label>
-            <div className="mt-2.5">
-              <input
-                name="date"
-                id="date"
-                type="date"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-                defaultValue={""}
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label
-              htmlFor="message"
-              className="block text-sm font-semibold leading-6 text-obtext"
-            >
-              Tentative Budget
-            </label>
-            <div className="mt-2.5">
-              <select
-                name="budget"
-                id="budget"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-                defaultValue={""}
-              >
-                <option>Upto Rs.50,000</option>
-                <option>Rs.50,000 to Rs.1,00,000</option>
-                <option>Rs.1,00,000 to Rs.2,00,000</option>
-                <option>Above Rs.2,00,000</option>
-              </select>
-            </div>
-          </div> */}
-          <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
-            <div className="flex h-6 items-center">
-              <Switch
-                checked={agreed}
-                onChange={setAgreed}
-                className={classNames(
-                  agreed ? "bg-indigo-600" : "bg-gray-200",
-                  "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                )}
-              >
-                <span className="sr-only">Agree to policies</span>
-                <span
-                  aria-hidden="true"
-                  className={classNames(
-                    agreed ? "translate-x-3.5" : "translate-x-0",
-                    "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out"
-                  )}
-                />
-              </Switch>
-            </div>
-            <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{" "}
+          
+         <label className="text-sm leading-6 text-gray-600">
+              By submitting this, you agree to our{" "}
               <Link href="/tnc" className="font-semibold text-obtext">
                 Terms and Conditions
               </Link>
               .
-            </Switch.Label>
-          </Switch.Group>
+            </label>
         </div>
         <div className="mt-10 bg-obtext">
           <button
