@@ -44,6 +44,19 @@ export default function Intro() {
   );
 }
 
+export  function GroupTripIntro() {
+  return (
+      <div className={`text-center ${myFont.className}`}>
+        <div className="">
+          <p className="text-white text-3xl">amazing</p>
+          <p className="text-white text-6xl ">Group Trip</p>       
+          <p className="text-white text-3xl">start here</p>
+        </div>
+      </div>
+
+  );
+}
+
 
  
 

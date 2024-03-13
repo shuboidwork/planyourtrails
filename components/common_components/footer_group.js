@@ -1,21 +1,21 @@
 import Link from "next/link";
-import { LeadGenNew } from "./leadgen";
+import { LeadGenGroup, LeadGenNew } from "./leadgen";
 import LeadGenForm from "../landing_components/leadgenform";
+import LeadGenGroupForm from "../landing_components/leadgengroupform";
 
-export default function Footer() {
+export default function FooterGroupTrip() {
   return (
     <div className="flex justify-center bg-gradient-to-b from-white to-oceanbluelight mx-auto ">
       <div className="w-full items-center">
         <div className="mt-10 pt-15 items-center ">
           <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-center font-merriweather">
-            Want us to plan your next trip?
+            Want to join us on memorable journey?
           </h2>
           <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
-            We share informative content on our instagram and youtube channel.
-            And helped many travelers with their travel planning.
+            Register your interest and we will reach out to you soon.
           </p>
           <div className="mt-15">
-            <LeadGenForm></LeadGenForm>
+            <LeadGenGroupForm></LeadGenGroupForm>
           </div>
         </div>
         <h3 className="text-center text-obtext text-lg"> Follow us on </h3>

@@ -4,18 +4,6 @@ export default function CreatorCredentials() {
   return (
     <div>
       <div className="w-screen mx-auto py-2">
-        {/* <div className="px-5 ">
-        <div className="flex">
-          <p className="text-start font-merriweather bold text-4xl text-oceanblue ">
-            why choose us
-          </p>
-        </div>
-        <p className="text-base font-medium leading-7 text-gray-600 font-merriweather mt-2 ">
-          This is the description regarding the store owner and their journey so
-          far in travel space. This will include how many countries they have
-          travelled and how many destinations they are expert in.
-        </p>
-      </div> */}
         <div className="mt-10">
           <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
             Why should you plan your vacation through us?
@@ -87,6 +75,37 @@ export default function CreatorCredentials() {
               You can relax, since we will be doing all the planning to get you
               the best stays, activities within your budget
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function CreatorCredentialsGroup() {
+  return (
+    <div>
+      <div className="w-screen mx-auto py-2">
+        <div className="mt-10">
+          <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
+            Why should you join us on group trip?
+          </p>
+          <p className="text-center font-medium  text-black font-merriweather mt-3 px-3 ">
+            We create custom itineraries for group trips with unique and offbeat
+            destinations, along with exclusive travel deals for a memorable and
+            cost-effective experience.
+          </p>
+        </div>
+        <div className="mt-10 mx-auto">
+          <div className="col-span-1 flex justify-center my-auto">
+            <img
+              src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/group_trip1.jpeg"
+              className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
+            ></img>
+            <img
+              src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/group_trip2.jpeg"
+              className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
+            ></img>
           </div>
         </div>
       </div>

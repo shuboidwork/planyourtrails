@@ -81,14 +81,6 @@ export function LeadGenGroup() {
 }
 
 export function LeadGenNew({ scrollCallback }) {
-  // const scrollToBottom = () => {
-  //   const scrollHeight = document.body.scrollHeight;
-  //   const offset = 200;
-  //   window.scrollTo({
-  //     top: document.body.scrollHeight - offset,
-  //     behavior: "smooth", // Optionally add smooth scrolling behavior
-  //   });
-  // };
   return (
     <div className="mt-10 h-30 w-screen flex justify-center ">
       <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-obtext rounded-sm flex justify-center items-center">
@@ -97,6 +89,21 @@ export function LeadGenNew({ scrollCallback }) {
           className="text-white bold text-center m-2 font-merriweather"
         >
           Plan your trip now!
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export function LeadGenGroupTripButton({ scrollCallback }) {
+  return (
+    <div className="mt-10 h-30 w-screen flex justify-center ">
+      <div className=" shadow-lg shadow-slate-600 col-span-1 sm:row-span-1 bg-obtext rounded-sm flex justify-center items-center">
+        <button
+          onClick={scrollCallback}
+          className="text-white bold text-center m-2 font-merriweather"
+        >
+          Join us now!
         </button>
       </div>
     </div>
