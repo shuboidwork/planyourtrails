@@ -34,6 +34,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <LeadGenGroupTripButton
+        scrollCallback={scrollToBottom}
+      ></LeadGenGroupTripButton>
 
       <div className="mt-20">
         <CreatorCredentialsGroup></CreatorCredentialsGroup>
