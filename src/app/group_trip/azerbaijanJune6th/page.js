@@ -34,6 +34,10 @@ export default function Home() {
           />
         </div>
       </div>
+      <div className="text-center">
+        Please swipe right for more detailed itinerary and costing, you can fill
+        the form if you are interested.
+      </div>
       <LeadGenGroupTripButton
         scrollCallback={scrollToBottom}
       ></LeadGenGroupTripButton>
