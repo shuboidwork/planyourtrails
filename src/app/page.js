@@ -1,5 +1,7 @@
 "use client";
-import CreatorCredentials from "../../components/landing_components/creatorcredentials";
+import CreatorCredentials, {
+  WhatsNewSection,
+} from "../../components/landing_components/creatorcredentials";
 import DestiNationExpertise from "../../components/landing_components/destinationexpertise";
 import HowItWorks, {
   HowItWorksTrial,
@@ -50,7 +52,9 @@ export default function Home() {
       <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
         <HowItWorksTrial></HowItWorksTrial>
       </div>
-
+      <div className="mt-20">
+        <WhatsNewSection></WhatsNewSection>
+      </div>
       <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
       </div>

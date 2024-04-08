@@ -1,5 +1,9 @@
 "use client";
 import { motion, useTransform, useScroll } from "framer-motion";
+import localFont from "next/font/local";
+
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
+
 export default function CreatorCredentials() {
   return (
     <div>
@@ -106,6 +110,48 @@ export function CreatorCredentialsGroup() {
               src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/group_trip2.jpeg"
               className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
             ></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function WhatsNewSection() {
+  return (
+    <div>
+      <div className="w-screen mx-auto py-2">
+        <div className="mt-10">
+          <p
+            className={`text-center ${myFont.className} bold text-3xl text-oceanblue animate-pulse`}
+          >
+            What's New?
+          </p>
+        </div>
+        <div className="mx-5">
+          <div className="col-span-1 flex justify-center my-auto">
+            <div className="p-3 rounded-md">
+              <a href="https://www.google.com/maps/d/u/0/viewer?mid=1lkDgvm5VmnKZFK557Ee3LTLkgVJE3eY&ll=0%2C0&z=9">
+                <img
+                  src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/bali_recommendations.png"
+                  className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
+                ></img>
+              </a>
+              <div className="text-center font-merriweather  text-oceanblue text-sm">
+                Bali Recommendations Map
+              </div>
+            </div>
+            <div className="p-3">
+              <a href="/group_trip/azerbaijanJune6th">
+                <img
+                  src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/recommendations/group+trip+6th+June.png"
+                  className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
+                ></img>
+              </a>
+              <div className="text-center font-merriweather  text-oceanblue  text-sm">
+                Amazing group trip
+              </div>
+            </div>
           </div>
         </div>
       </div>
