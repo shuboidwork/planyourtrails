@@ -138,7 +138,7 @@ export function WhatsNewSection() {
                 ></img>
               </a>
               <div className="text-center font-merriweather  text-oceanblue text-sm">
-                Bali Recommendations Map
+                Recommendations Map
               </div>
             </div>
             <div className="p-3">
@@ -149,7 +149,7 @@ export function WhatsNewSection() {
                 ></img>
               </a>
               <div className="text-center font-merriweather  text-oceanblue  text-sm">
-                Amazing group trip
+                Amazing Group trip
               </div>
             </div>
           </div>
