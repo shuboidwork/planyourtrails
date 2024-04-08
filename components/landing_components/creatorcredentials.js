@@ -125,7 +125,7 @@ export function WhatsNewSection() {
           <p
             className={`text-center ${myFont.className} bold text-3xl text-oceanblue animate-pulse`}
           >
-            What's New?
+            What&apos;s New?
           </p>
         </div>
         <div className="mx-5">
