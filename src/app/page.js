@@ -52,9 +52,9 @@ export default function Home() {
       <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
         <HowItWorksTrial></HowItWorksTrial>
       </div>
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <WhatsNewSection></WhatsNewSection>
-      </div>
+      </div> */}
       <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
       </div>
