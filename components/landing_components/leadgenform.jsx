@@ -90,8 +90,6 @@ export default function LeadGenForm() {
     window.location.reload();
   };
 
-  const [agreed, setAgreed] = useState(false);
-
   return (
     <div className="bg-white px-4 py-5 sm:px-6 lg:px-8 m-2 rounded-lg">
       <form
@@ -359,6 +357,7 @@ export default function LeadGenForm() {
           </button>
         </div>
       </form>
+      {isSuccessModalOpen && <SuccessModal onClose={closeSuccessModal} />}
     </div>
   );
 }
