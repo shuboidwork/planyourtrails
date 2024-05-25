@@ -19,11 +19,11 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 "
       ></div>
       <div className="absolute inset-x-0 bottom-0 z-10 grid place-content-center">
-        <p
+        <div
           className={`bg-gradient-to-b from-white/20 to-white/0 p-8 text-3xl ${myFont.className} uppercase text-white backdrop-blur-sm`}
         >
           {card.title}
-        </p>
+        </div>
       </div>
     </div>
   );
@@ -86,15 +86,15 @@ export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
       <div className="h-48 items-center px-2">
-        <p
+        <div
           className={`text-center bold text-3xl text-oceanblue ${myFont.className}`}
         >
           Wander Two Ways
-        </p>
-        <p className="text-center font-medium font-merriweather mt-3 ">
+        </div>
+        <div className="text-center font-medium font-merriweather mt-3 ">
           Meet <div className="font-abril text-xl pb-2">Himani & Sagar </div> a
           full time travelling couple sharing their journey with the world
-        </p>
+        </div>
       </div>
       {/* <InteractiveMarquee>
         {destination.map((card) => {

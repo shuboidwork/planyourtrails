@@ -11,10 +11,18 @@ export default function Footer() {
             Want us to plan your next trip?
           </h2>
           <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
-            We share informative content on our instagram and youtube channel.
-            And helped many travelers with their travel planning.
+            Here is the quick video explaing the process of how we plan your
+            dream vacation
           </p>
+
           <div className="mt-15">
+            <div className="relative h-96 m-5 overflow-hidden max-w-full bg-black">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full border-0"
+                src={`https://www.youtube.com/embed/Fdlpk3KK8zg`}
+                allowFullScreen
+              ></iframe>
+            </div>
             <LeadGenForm></LeadGenForm>
           </div>
         </div>

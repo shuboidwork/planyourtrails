@@ -1,14 +1,11 @@
 "use client";
-import { useState } from "react";
-import React from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Switch } from "@headlessui/react";
 import axios from "axios";
 import Link from "next/link";
+import React, { useState } from "react";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-
 
 const SuccessModal = ({ onClose }) => {
   return (
@@ -39,29 +36,51 @@ const SuccessModal = ({ onClose }) => {
   );
 };
 
-
 export default function LeadGenForm() {
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+
+  // Function to handle change in selected options
+  const handleSelectChange = (e) => {
+    const options = Array.from(
+      e.target.selectedOptions,
+      (option) => option.value
+    );
+    setSelectedOptions(options);
+  };
+
+  // Dummy options
+  const options = [
+    { value: "nightlife", label: "Nightlife" },
+    { value: "adventure", label: "Adventure" },
+    { value: "romantic", label: "Romantic" },
+    { value: "culture", label: "Culture" },
+    { value: "nature", label: "Nature" },
+    { value: "architecture", label: "Architecture" },
+  ];
 
   async function createLead(formData) {
     try {
-      const response = await axios.post("https://sas.doest.in/store/S170928001000015930302999376402427/leads", {
-      store: 'S170928001000015930302999376402427',
-      data: {
-          first_name: formData.get("first_name"),
-          last_name: formData.get("last_name"),
-          destination: formData.get("destination"),
-          email: formData.get("email"),
-          phone: formData.get("phone-number"),
-          country_code: "91",
-
-
-          // add more data if needed
-        },
-      });
-      
+      const response = await axios.post(
+        "https://sas.doest.in/store/S170928001000015930302999376402427/leads",
+        {
+          store: "S170928001000015930302999376402427",
+          data: {
+            first_name: formData.get("first_name"),
+            last_name: formData.get("last_name"),
+            destination: formData.get("destination"),
+            email: formData.get("email"),
+            phone: formData.get("phone-number"),
+            country_code: "91",
+            budget: formData.get("budget"),
+            hotel_category: formData.get("hotel_category"),
+            vacation_type: formData.get("vacation_type"),
+            number_of_days: formData.get("number_of_days"),
+            passions: selectedOptions,
+          },
+        }
+      );
     } catch (error) {
-      
       console.log(error);
     }
     setIsSuccessModalOpen(true);
@@ -74,44 +93,53 @@ export default function LeadGenForm() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className=" bg-white px-6 py-5 sm:py-5 lg:px-8 m-2 rounded-lg">
+    <div className="bg-white px-4 py-5 sm:px-6 lg:px-8 m-2 rounded-lg">
       <form
         action={createLead}
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-5 max-w-xl sm:mt-10 lg:mt-20"
       >
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <label
-              htmlFor="first-name"
-              className="block text-sm font-semibold leading-6 text-obtext"
-            >
-              First name
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="first_name"
-                id="first_name"
-                autoComplete="given-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-              />
+        <div className="flex flex-col gap-x-8 gap-y-2">
+          <label
+            htmlFor="personal-information"
+            className="block text-sm font-semibold leading-6 text-obtext col-span-full"
+          >
+            Personal Information
+          </label>
+          <hr className="col-span-full"></hr>
+          <div className="w-full flex justify-center flex-row gap-x-2">
+            <div className="w-full">
+              <label
+                htmlFor="first-name"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                First name
+              </label>
+              <div className="">
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <label
-              htmlFor="last-name"
-              className="block text-sm font-semibold leading-6 text-obtext"
-            >
-              Last name
-            </label>
-            <div className="mt-2.5">
-              <input
-                type="text"
-                name="last_name"
-                id="last_name"
-                autoComplete="family-name"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
-              />
+            <div className="w-full  sm:mt-0">
+              <label
+                htmlFor="last-name"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                Last name
+              </label>
+              <div className="">
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  autoComplete="family-name"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                />
+              </div>
             </div>
           </div>
 
@@ -148,14 +176,10 @@ export default function LeadGenForm() {
                 <label
                   id="country"
                   name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-2 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm"
+                  className="h-full rounded-md border-0 bg-transparent py-2 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm"
                 >
                   +91
                 </label>
-                <ChevronDownIcon
-                  className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                  aria-hidden="true"
-                />
               </div>
               <input
                 type="tel"
@@ -169,10 +193,10 @@ export default function LeadGenForm() {
 
           <div>
             <label
-              htmlFor="last-name"
+              htmlFor="destination"
               className="block text-sm font-semibold leading-6 text-obtext"
             >
-              Destination (also,if any comments)
+              Destination Preferences (also, if any comments)
             </label>
             <div className="mt-2.5">
               <input
@@ -184,25 +208,157 @@ export default function LeadGenForm() {
               />
             </div>
           </div>
-          
-         <label className="text-sm leading-6 text-gray-600">
-              By submitting this, you agree to our{" "}
-              <Link href="/tnc" className="font-semibold text-obtext">
-                Terms and Conditions
-              </Link>
-              .
+          <div className="w-full">
+            <label
+              htmlFor="product"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
+              Product
             </label>
+            <div className="mt-2.5">
+              <select
+                name="product"
+                id="product"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                required
+              >
+                <option value="">Select Product</option>{" "}
+                {/* Add an empty option for default selection */}
+                <option value="itinerary">Itinerary</option>
+                <option value="itinerary_and_package">
+                  Itinerary and Package
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div className="w-full flex justify-center flex-row gap-x-2 ">
+            <div className="w-full">
+              <label
+                htmlFor="budget"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                Budget in INR
+              </label>
+              <div className="mt-2.5">
+                <select
+                  name="budget"
+                  id="budget"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                >
+                  <option value="<50k">Upto 50,000</option>
+                  <option value="50k-1lac">50k - 1 Lakh</option>
+                  <option value="1lac-2lac">1 Lakh - 2 Lakh</option>
+                  <option value="above-2lac">Above 2 Lakhs</option>
+                </select>
+              </div>
+            </div>
+            <div className="w-full sm:mt-0">
+              <label
+                htmlFor="hotel_category"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                Hotel Category
+              </label>
+              <div className="mt-2.5">
+                <select
+                  name="hotel_category"
+                  id="hotel_category"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                >
+                  <option value="3_star">3 Star</option>
+                  <option value="4_star">4 Star</option>
+                  <option value="5_star">5 Star</option>
+                  <option value="air_bnbs">Air Bnbs</option>
+                  <option value="home_stays">Homestays</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-row gap-x-2 ">
+            <div className="w-full">
+              <label
+                htmlFor="vacation_type"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                Type of Vacation
+              </label>
+              <div className="mt-2.5">
+                <select
+                  name="vacation_type"
+                  id="vacation_type"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                >
+                  <option value="all_famous">All famous spots</option>
+                  <option value="relaxing">Relaxing</option>
+                  <option value="off_beat">Offbeat</option>
+                  <option value="mixed">Mixed</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="w-full sm:mt-0">
+              <label
+                htmlFor="number_of_days"
+                className="block text-sm font-semibold leading-6 text-obtext"
+              >
+                No.of Days
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="number"
+                  name="number_of_days"
+                  id="number_of_days"
+                  max="30"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="passions"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
+              Passions
+            </label>
+            <div className="mt-2.5">
+              <select
+                name="passions"
+                id="passions"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                multiple
+                value={selectedOptions} // Set value to the array of selected options
+                onChange={handleSelectChange} // Handle change event
+                required
+              >
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
         </div>
-        <div className="mt-10 bg-obtext">
+
+        <label className="text-sm leading-6 text-gray-600 mt-4 sm:col-span-2">
+          By submitting this, you agree to our{" "}
+          <Link href="/tnc" className="font-medium text-obtext">
+            Terms and Conditions
+          </Link>
+          .
+        </label>
+        <div className="mt-4 flex justify-center sm:col-span-2 bg-obtext">
           <button
             type="submit"
-            className="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-obtext px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-obtext text-center"
           >
             Submit
           </button>
         </div>
       </form>
-      {isSuccessModalOpen && <SuccessModal onClose={closeSuccessModal} />}
     </div>
   );
 }
