@@ -77,6 +77,7 @@ export default function LeadGenForm() {
             vacation_type: formData.get("vacation_type"),
             number_of_days: formData.get("number_of_days"),
             passions: selectedOptions,
+            number_of_days: formData.get("product"),
           },
         }
       );
@@ -101,7 +102,8 @@ export default function LeadGenForm() {
             htmlFor="personal-information"
             className="block text-sm font-semibold leading-6 text-obtext col-span-full"
           >
-            Personal Information
+            We recommend going through the video above before you fill this
+            form.
           </label>
           <hr className="col-span-full"></hr>
           <div className="w-full flex justify-center flex-row gap-x-2">
