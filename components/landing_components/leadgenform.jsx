@@ -77,7 +77,7 @@ export default function LeadGenForm() {
             vacation_type: formData.get("vacation_type"),
             number_of_days: formData.get("number_of_days"),
             passions: selectedOptions,
-            number_of_days: formData.get("product"),
+            product: formData.get("product"),
           },
         }
       );
