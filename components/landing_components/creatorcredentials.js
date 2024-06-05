@@ -10,12 +10,12 @@ export default function CreatorCredentials() {
       <div className="w-screen mx-auto py-2">
         <div className="mt-10">
           <p className="text-center font-merriweather bold text-3xl text-oceanblue ">
-            Why should you plan your vacation through us?
+            Why should you plan your vacation through me?
           </p>
           <p className="text-center font-medium  text-black font-merriweather mt-3 px-3 ">
-            We make sure the itinerary is experential and suitable for your
-            travel type. We add offbeat places which are not usually visited by
-            people. And to add we give exclusive travel deals in our packages
+            I make sure the itinerary is experential and suitable for your
+            travel type. And I add offbeat places which are not usually visited
+            by people. And to I give exclusive travel deals in my packages
           </p>
         </div>
         <div className="mt-10 mx-auto">
@@ -40,11 +40,11 @@ export default function CreatorCredentials() {
             ></img>
 
             <h3 className="mb-2 text-xl text-oceanblue font-merriweather">
-              Travel like us
+              Travel like me
             </h3>
             <p className="text-obtext font-merriweather font-sm text-center">
-              If you like the way we travel, we will suggest the exact same
-              stays, activities and experiences for you as well
+              If you like the way I travel, let me suggest the exact same stays,
+              activities and experiences for you as well
             </p>
           </div>
         </div>
@@ -95,9 +95,9 @@ export function CreatorCredentialsGroup() {
             Why should you join us on group trip?
           </p>
           <p className="text-center font-medium  text-black font-merriweather mt-3 px-3 ">
-            We create custom itineraries for group trips with unique and offbeat
-            destinations, along with exclusive travel deals for a memorable and
-            cost-effective experience.
+            I help create custom itineraries for group trips with unique and
+            offbeat destinations, along with exclusive travel deals for a
+            memorable and cost-effective experience.
           </p>
         </div>
         <div className="mt-10 mx-auto">

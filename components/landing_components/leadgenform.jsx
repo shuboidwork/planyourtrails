@@ -100,7 +100,7 @@ export default function LeadGenForm() {
         <div className="flex flex-col gap-x-8 gap-y-2">
           <label
             htmlFor="personal-information"
-            className="block text-sm font-semibold leading-6 text-obtext col-span-full"
+            className="block text-sm font-semibold leading-6  col-span-full"
           >
             We recommend going through the video above before you fill this
             form.
@@ -110,7 +110,7 @@ export default function LeadGenForm() {
             <div className="w-full">
               <label
                 htmlFor="first-name"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 First name
               </label>
@@ -120,14 +120,14 @@ export default function LeadGenForm() {
                   name="first_name"
                   id="first_name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
             <div className="w-full  sm:mt-0">
               <label
                 htmlFor="last-name"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 Last name
               </label>
@@ -137,7 +137,7 @@ export default function LeadGenForm() {
                   name="last_name"
                   id="last_name"
                   autoComplete="family-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function LeadGenForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
-              className="block text-sm font-semibold leading-6 text-obtext"
+              className="block text-sm font-semibold leading-6 "
             >
               Email
             </label>
@@ -156,7 +156,7 @@ export default function LeadGenForm() {
                 name="email"
                 id="email"
                 autoComplete="email"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function LeadGenForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="phone-number"
-              className="block text-sm font-semibold leading-6 text-obtext"
+              className="block text-sm font-semibold leading-6 "
             >
               Phone number
             </label>
@@ -186,7 +186,7 @@ export default function LeadGenForm() {
                 name="phone-number"
                 id="phone-number"
                 autoComplete="tel"
-                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 pl-20  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function LeadGenForm() {
           <div>
             <label
               htmlFor="destination"
-              className="block text-sm font-semibold leading-6 text-obtext"
+              className="block text-sm font-semibold leading-6 "
             >
               Destination Preferences (also, if any comments)
             </label>
@@ -204,14 +204,14 @@ export default function LeadGenForm() {
                 name="destination"
                 id="destination"
                 autoComplete="choose destination"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
             </div>
           </div>
           <div className="w-full">
             <label
               htmlFor="product"
-              className="block text-sm font-semibold leading-6 text-obtext"
+              className="block text-sm font-semibold leading-6 "
             >
               Product
             </label>
@@ -219,7 +219,7 @@ export default function LeadGenForm() {
               <select
                 name="product"
                 id="product"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 required
               >
                 <option value="">Select Product</option>{" "}
@@ -236,7 +236,7 @@ export default function LeadGenForm() {
             <div className="w-full">
               <label
                 htmlFor="budget"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 Budget in INR
               </label>
@@ -244,7 +244,7 @@ export default function LeadGenForm() {
                 <select
                   name="budget"
                   id="budget"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 >
                   <option value="<50k">Upto 50,000</option>
                   <option value="50k-1lac">50k - 1 Lakh</option>
@@ -256,7 +256,7 @@ export default function LeadGenForm() {
             <div className="w-full sm:mt-0">
               <label
                 htmlFor="hotel_category"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 Hotel Category
               </label>
@@ -264,7 +264,7 @@ export default function LeadGenForm() {
                 <select
                   name="hotel_category"
                   id="hotel_category"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 >
                   <option value="3_star">3 Star</option>
                   <option value="4_star">4 Star</option>
@@ -280,7 +280,7 @@ export default function LeadGenForm() {
             <div className="w-full">
               <label
                 htmlFor="vacation_type"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 Type of Vacation
               </label>
@@ -288,7 +288,7 @@ export default function LeadGenForm() {
                 <select
                   name="vacation_type"
                   id="vacation_type"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 >
                   <option value="all_famous">All famous spots</option>
                   <option value="relaxing">Relaxing</option>
@@ -301,7 +301,7 @@ export default function LeadGenForm() {
             <div className="w-full sm:mt-0">
               <label
                 htmlFor="number_of_days"
-                className="block text-sm font-semibold leading-6 text-obtext"
+                className="block text-sm font-semibold leading-6 "
               >
                 No.of Days
               </label>
@@ -311,7 +311,7 @@ export default function LeadGenForm() {
                   name="number_of_days"
                   id="number_of_days"
                   max="30"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -319,7 +319,7 @@ export default function LeadGenForm() {
           <div>
             <label
               htmlFor="passions"
-              className="block text-sm font-semibold leading-6 text-obtext"
+              className="block text-sm font-semibold leading-6 "
             >
               Passions
             </label>
@@ -327,7 +327,7 @@ export default function LeadGenForm() {
               <select
                 name="passions"
                 id="passions"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 multiple
                 value={selectedOptions} // Set value to the array of selected options
                 onChange={handleSelectChange} // Handle change event
@@ -345,7 +345,7 @@ export default function LeadGenForm() {
 
         <label className="text-sm leading-6 text-gray-600 mt-4 sm:col-span-2">
           By submitting this, you agree to our{" "}
-          <Link href="/tnc" className="font-medium text-obtext">
+          <Link href="/tnc" className="font-medium ">
             Terms and Conditions
           </Link>
           .

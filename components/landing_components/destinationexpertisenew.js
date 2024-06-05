@@ -78,53 +78,33 @@ export default HorizontalDestinations;
 
 const cards = [
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/egypt.jpg",
-    title: "Egypt 🇪🇬",
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg",
+    title: "Amsterdam",
     id: 1,
   },
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/vietnam.jpg",
-    title: "Vietnam",
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/paris.JPG",
+    title: "Paris",
     id: 2,
   },
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/philippines2.jpg",
-    title: "Philippines",
-    id: 6,
-  },
-  {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/thailand.jpg",
-    title: "Thailand",
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/belgium.jpg",
+    title: "Belgium",
     id: 3,
   },
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/kashmir.jpg",
-    title: "Kashmir",
-    id: 5,
-  },
-  {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/philippines.jpg",
-    title: "Philippines",
-    id: 6,
-  },
-  {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/rajasthan.jpg",
-    title: "Rajasthan",
-    id: 7,
-  },
-  {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/thailand2.jpg",
-    title: "Thailand",
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/turkey.jpg",
+    title: "Turkey",
     id: 4,
   },
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/kashmir2.jpg",
-    title: "Kashmir",
-    id: 8,
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg",
+    title: "Himachal",
+    id: 5,
   },
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/destinations/himachal.jpg",
-    title: "Himachal",
-    id: 9,
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/switzerland.jpg",
+    title: "Switzerland",
+    id: 6,
   },
 ];

@@ -6,8 +6,8 @@ import { Abril_Fatface } from "next/font/google";
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 export const metadata = {
-  title: "Wandertwoways",
-  description: "by Himani and Sagar",
+  title: "Planyourtrails",
+  description: "by Chirag Khandelwal",
 };
 
 const sanchez = Sanchez({
@@ -39,10 +39,7 @@ export default function RootLayout({ children }) {
       className={`w-screen overflow-x-hidden position-fixed ${merriweather.variable}  ${abril.variable} `}
     >
       <SpeedInsights />
-      <body className="">
-        {/* <NavBarFlow className=""></NavBarFlow> */}
-        {children}
-      </body>
+      <body className="">{children}</body>
     </html>
   );
 }

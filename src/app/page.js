@@ -30,11 +30,11 @@ export default function Home() {
       <div className=" relative">
         <img
           className="w-full object-cover h-screen hidden lg:block md:block"
-          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/new_carousel_hs_large.gif"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg"
         ></img>
         <img
           className="w-full object-cover h-screen lg:hidden md:hidden"
-          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/new_carousel_hs.gif"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg"
         ></img>
 
         <div className="absolute  inset-x-0 bottom-20">
@@ -49,15 +49,15 @@ export default function Home() {
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div>
 
-      <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
+      {/* <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
         <HowItWorksTrial></HowItWorksTrial>
-      </div>
+      </div> */}
       {/* <div className="mt-20">
         <WhatsNewSection></WhatsNewSection>
       </div> */}
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
-      </div>
+      </div> */}
       {/* <div className="h-screen w-screen">
         <GroupTravel></GroupTravel>
       </div> */}
@@ -68,5 +68,3 @@ export default function Home() {
     </div>
   );
 }
-
-//"bg-gradient-to-r from-pink-500 via-purple-500 to-black opacity-30"
