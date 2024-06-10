@@ -62,9 +62,9 @@ export default function LeadGenForm() {
   async function createLead(formData) {
     try {
       const response = await axios.post(
-        "https://sas.doest.in/store/S170928001000015930302999376402427/leads",
+        "https://sas.doest.in/store/S171799969700017143897175624819348/leads",
         {
-          store: "S170928001000015930302999376402427",
+          store: "S171799969700017143897175624819348",
           data: {
             first_name: formData.get("first_name"),
             last_name: formData.get("last_name"),
