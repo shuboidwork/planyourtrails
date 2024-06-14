@@ -65,18 +65,23 @@ export default function LeadGenForm() {
         "https://sas.doest.in/store/S171799969700017143897175624819348/leads",
         {
           store: "S171799969700017143897175624819348",
-          data: {
-            first_name: formData.get("first_name"),
-            last_name: formData.get("last_name"),
-            destination: formData.get("destination"),
-            email: formData.get("email"),
-            phone: formData.get("phone-number"),
-            country_code: "91",
-            budget: formData.get("budget"),
+          lead_profile: {
             hotel_category: formData.get("hotel_category"),
             vacation_type: formData.get("vacation_type"),
             number_of_days: formData.get("number_of_days"),
             passions: selectedOptions,
+          },
+          store_customer: {
+            first_name: formData.get("first_name"),
+            last_name: formData.get("last_name"),
+            phone: formData.get("phone-number"),
+            phone_same_as_wa: true,
+            country_code: "91",
+            email: formData.get("email"),
+          },
+          data: {
+            budget: formData.get("budget"),
+            destination: formData.get("destination"),
             product: formData.get("product"),
           },
         }
