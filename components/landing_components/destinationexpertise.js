@@ -31,34 +31,50 @@ const Card = ({ card }) => {
 
 const destination = [
   {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg",
-    title: "Amsterdam",
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/switzerland.jpg",
+    title: "Switzerland",
     id: 1,
   },
+
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/paris.JPG",
     title: "Paris",
     id: 2,
   },
   {
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/germany.JPG",
+    title: "Germany",
+    id: 3,
+  },
+  {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/belgium.jpg",
     title: "Belgium",
-    id: 3,
+    id: 4,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/turkey.jpg",
     title: "Turkey",
-    id: 4,
+    id: 5,
+  },
+  {
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Bali.jpeg",
+    title: "Bali",
+    id: 6,
+  },
+  {
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/thailand.PNG",
+    title: "Thailand",
+    id: 7,
+  },
+  {
+    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg",
+    title: "Amsterdam",
+    id: 8,
   },
   {
     url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg",
     title: "Himachal",
-    id: 5,
-  },
-  {
-    url: "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/switzerland.jpg",
-    title: "Switzerland",
-    id: 6,
+    id: 8,
   },
 ];
 

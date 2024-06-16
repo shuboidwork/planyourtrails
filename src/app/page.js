@@ -30,11 +30,11 @@ export default function Home() {
       <div className=" relative">
         <img
           className="w-full object-cover h-screen hidden lg:block md:block"
-          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg"
         ></img>
         <img
           className="w-full object-cover h-screen lg:hidden md:hidden"
-          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/Himachal.jpg"
+          src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg"
         ></img>
 
         <div className="absolute  inset-x-0 bottom-20">
