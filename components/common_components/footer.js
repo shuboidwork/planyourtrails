@@ -17,10 +17,10 @@ export default function Footer() {
 
           <div className="mt-15">
             <div className="relative h-96 m-5 overflow-hidden max-w-full bg-black">
-              <iframe
+              {/* <iframe
                 className="absolute top-0 left-0 w-full h-full border-0"
                 src={`https://www.youtube.com/embed/2zqdkABA5TU?si=uQKCTSYLjOePFxqL`}
-              ></iframe>
+              ></iframe> */}
             </div>
             <LeadGenForm></LeadGenForm>
           </div>

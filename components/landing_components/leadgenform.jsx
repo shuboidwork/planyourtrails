@@ -103,13 +103,13 @@ export default function LeadGenForm() {
         className="mx-auto mt-5 max-w-xl sm:mt-10 lg:mt-20"
       >
         <div className="flex flex-col gap-x-8 gap-y-2">
-          <label
+          {/* <label
             htmlFor="personal-information"
             className="block text-sm font-semibold leading-6  col-span-full"
           >
             We recommend going through the video above before you fill this
             form.
-          </label>
+          </label> */}
           <hr className="col-span-full"></hr>
           <div className="w-full flex justify-center flex-row gap-x-2">
             <div className="w-full">
