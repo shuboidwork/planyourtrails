@@ -11,17 +11,16 @@ export default function Footer() {
             Want me to plan your next trip?
           </h2>
           <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
-            Here is the quick video explaing the process of how I plan your
-            vacation
+            Fill this form below, and my team will reach out to you soon.
           </p>
 
           <div className="mt-15">
-            <div className="relative h-96 m-5 overflow-hidden max-w-full bg-black">
-              {/* <iframe
+            {/* <div className="relative h-96 m-5 overflow-hidden max-w-full bg-black">
+              <iframe
                 className="absolute top-0 left-0 w-full h-full border-0"
                 src={`https://www.youtube.com/embed/2zqdkABA5TU?si=uQKCTSYLjOePFxqL`}
-              ></iframe> */}
-            </div>
+              ></iframe>
+            </div> */}
             <LeadGenForm></LeadGenForm>
           </div>
         </div>
