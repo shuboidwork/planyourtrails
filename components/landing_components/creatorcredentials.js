@@ -21,12 +21,8 @@ export default function CreatorCredentials() {
         <div className="mt-10 mx-auto">
           <div className="col-span-1 flex justify-center my-auto">
             <img
-              src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred1.jpg"
+              src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/cred1.JPG"
               className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl"
-            ></img>
-            <img
-              src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/wanderlust_himani/credentials/cred2.jpg"
-              className="w-30 h-60 object-contain items-center justify-center  m-1 rounded-xl "
             ></img>
           </div>
         </div>

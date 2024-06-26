@@ -1,7 +1,16 @@
 "use client";
 
 import React, { useRef } from "react";
-import ReactPDF from "@react-pdf/renderer";
+import {
+  GroupTravelIntro,
+  GroupTripIntro,
+} from "../../../../components/landing_components/intro";
+import CreatorCredentials, {
+  CreatorCredentialsGroup,
+} from "../../../../components/landing_components/creatorcredentials";
+import { LeadGenGroupTripButton } from "../../../../components/common_components/leadgen";
+import Footer from "../../../../components/common_components/footer";
+import FooterGroupTrip from "../../../../components/common_components/footer_group";
 
 export default function Home() {
   const bottomRef = useRef();
@@ -10,14 +19,40 @@ export default function Home() {
   };
   return (
     <div className="w-screen">
-      <object
-        data={
-          "https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/Thailand+Group+Trip+PYT.pdf"
-        }
-        type="application/pdf"
-        className="w-full h-full md:w-3/4 md:h-3/4 lg:w-2/3 lg:h-2/3"
-        aria-label="PDF Viewer"
-      ></object>
+      <div
+        className="relative w-full mx-auto"
+        style={{ paddingTop: "141.4286%" }}
+      >
+        <div
+          className="absolute inset-0 shadow-lg rounded-lg"
+          style={{ boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)" }}
+        >
+          <iframe
+            className="w-full h-full"
+            //src="https://www.canva.com/design/DAGA9t8ehPo/KOApKGImFudLS__1mIYcyQ/view?embed"
+            src="https://www.canva.com/design/DAGICQOVPvY/Mv6uqrDkuZtwYN1M0Tj3qg/view?embed"
+          />
+        </div>
+      </div>
+      <div className="text-center">
+        Please swipe right for more detailed itinerary and costing, follow steps
+        mentioned to confirm your slot.
+      </div>
+      {/* <div className="text-center">
+        Please swipe right for more detailed itinerary and costing, you can fill
+        the form if you are interested.
+      </div>
+      <LeadGenGroupTripButton
+        scrollCallback={scrollToBottom}
+      ></LeadGenGroupTripButton>
+
+      <div className="mt-20">
+        <CreatorCredentialsGroup></CreatorCredentialsGroup>
+      </div> */}
+
+      {/* <div ref={bottomRef} className="mt-20">
+        <FooterGroupTrip></FooterGroupTrip>
+      </div> */}
     </div>
   );
 }

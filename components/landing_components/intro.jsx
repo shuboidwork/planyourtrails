@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
+const myFont = localFont({ src: "../../src/app/FontleroyBrownNF.ttf" });
 
 export function GroupTravelIntro() {
   return (
@@ -31,9 +31,9 @@ export default function Intro() {
   return (
     <div className={`text-center ${myFont.className}`}>
       <div className="">
-        <p className="text-white text-3xl">your</p>
-        <p className="text-white text-6xl ">amazing vacation</p>
-        <p className="text-white text-3xl">starts here</p>
+        <p className="text-white text-5xl">your</p>
+        <p className="text-white text-8xl ">amazing vacation</p>
+        <p className="text-white text-5xl">starts here</p>
       </div>
     </div>
   );

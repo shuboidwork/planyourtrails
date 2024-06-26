@@ -17,10 +17,10 @@ module.exports = {
       colors: {
         pgreen: "#37b8ab",
         pblue: "#0f1e64",
-        oceanblue: "#161925",
+        oceanblue: "#0857a0",
         offwhite: "#FAF9F6",
-        oceanbluelight: "#ecfbff",
-        obtext: "#04080f",
+        oceanbluelight: "#6ba4e9",
+        obtext: "#0a3561",
       },
     },
     fontFamily: {

@@ -42,22 +42,20 @@ export default function Home() {
           <LeadGenNew scrollCallback={scrollToBottom}></LeadGenNew>
         </div>
       </div>
-      {/* <div>
-        <HorizontalDestinations></HorizontalDestinations>
-      </div> */}
+
       <div className="h-screen bg-scroll">
         <DestiNationExpertise className=""></DestiNationExpertise>
       </div>
 
-      {/* <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
+      <div className="mt-10 lg:mt-36 md:mt-36 sm:mt-10 ">
         <HowItWorksTrial></HowItWorksTrial>
-      </div> */}
+      </div>
       {/* <div className="mt-20">
         <WhatsNewSection></WhatsNewSection>
       </div> */}
-      {/* <div className="mt-20">
+      <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
-      </div> */}
+      </div>
       {/* <div className="h-screen w-screen">
         <GroupTravel></GroupTravel>
       </div> */}
