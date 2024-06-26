@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-const myFont = localFont({ src: "../../src/app/FontleroyBrownNF.ttf" });
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
 
 export function GroupTravelIntro() {
   return (

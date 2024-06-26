@@ -3,7 +3,6 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import localFont from "next/font/local";
 
 const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
-
 export default function CreatorCredentials() {
   return (
     <div>

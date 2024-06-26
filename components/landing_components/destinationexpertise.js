@@ -2,7 +2,7 @@ import React from "react";
 
 import localFont from "next/font/local";
 
-const myFont = localFont({ src: "../../src/app/FontleroyBrownNF.ttf" });
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
 const Card = ({ card }) => {
   return (
     <div
