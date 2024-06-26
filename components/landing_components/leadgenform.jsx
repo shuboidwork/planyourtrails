@@ -124,6 +124,7 @@ export default function LeadGenForm() {
                   type="text"
                   name="first_name"
                   id="first_name"
+                  required="true"
                   autoComplete="given-name"
                   className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 />
@@ -141,6 +142,7 @@ export default function LeadGenForm() {
                   type="text"
                   name="last_name"
                   id="last_name"
+                  required="true"
                   autoComplete="family-name"
                   className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
                 />
@@ -160,6 +162,7 @@ export default function LeadGenForm() {
                 type="email"
                 name="email"
                 id="email"
+                required="true"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
@@ -190,6 +193,7 @@ export default function LeadGenForm() {
                 type="tel"
                 name="phone-number"
                 id="phone-number"
+                required="true"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
@@ -208,6 +212,7 @@ export default function LeadGenForm() {
                 type="text"
                 name="destination"
                 id="destination"
+                required="true"
                 autoComplete="choose destination"
                 className="block w-full rounded-md border-0 px-3.5 py-2  shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
               />
