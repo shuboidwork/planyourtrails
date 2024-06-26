@@ -29,12 +29,12 @@ export default function Home() {
         >
           <iframe
             className="w-full h-full"
-            src="https://www.canva.com/design/DAGA9t8ehPo/KOApKGImFudLS__1mIYcyQ/view?embed"
+            src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/Thailand+Group+Trip+PYT.pdf"
             allowFullScreen
           />
         </div>
       </div>
-      <div className="text-center">
+      {/* <div className="text-center">
         Please swipe right for more detailed itinerary and costing, you can fill
         the form if you are interested.
       </div>
@@ -44,11 +44,11 @@ export default function Home() {
 
       <div className="mt-20">
         <CreatorCredentialsGroup></CreatorCredentialsGroup>
-      </div>
+      </div> */}
 
-      <div ref={bottomRef} className="mt-20">
+      {/* <div ref={bottomRef} className="mt-20">
         <FooterGroupTrip></FooterGroupTrip>
-      </div>
+      </div> */}
     </div>
   );
 }

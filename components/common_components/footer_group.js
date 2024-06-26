@@ -32,16 +32,6 @@ export default function FooterGroupTrip() {
               ></img>
             </Link>
           </div>
-          <div>
-            <Link
-              href={"https://www.youtube.com/channel/UCdy40TK-wlSg-Ea2FEo7ohw"}
-            >
-              <img
-                src="/elements/youtube.png"
-                className="w-12 h-12 object-contain"
-              ></img>
-            </Link>
-          </div>
         </div>
 
         <div className="flex justify-center items-center my-10">
@@ -57,7 +47,7 @@ export default function FooterGroupTrip() {
             className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather"
             href="/"
           >
-            Wandertwoways
+            Planyourtrails
           </Link>
         </div>
       </div>
