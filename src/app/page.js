@@ -56,9 +56,6 @@ export default function Home() {
       <div className="mt-20">
         <CreatorCredentials></CreatorCredentials>
       </div>
-      {/* <div className="h-screen w-screen">
-        <GroupTravel></GroupTravel>
-      </div> */}
 
       <div ref={bottomRef} className="mt-20">
         <Footer></Footer>
