@@ -80,18 +80,6 @@ const destination = [
 export default function DestiNationExpertise() {
   return (
     <div className="mt-10 w-screen h-full ">
-      <div className="h-48 items-center px-2">
-        <div
-          className={`text-center bold text-3xl text-oceanblue ${myFont.className}`}
-        >
-          Plan Your Trails
-        </div>
-        <div className="text-center font-medium font-merriweather mt-3 ">
-          Meet your Travel Expert{" "}
-          <div className="font-abril text-xl pb-2">Chirag Khandelwal</div>a avid
-          traveler building amazing travel mememories
-        </div>
-      </div>
       {/* <InteractiveMarquee>
         {destination.map((card) => {
           return <Card card={card} key={card.id} />;

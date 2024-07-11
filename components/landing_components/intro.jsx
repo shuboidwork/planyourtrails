@@ -29,11 +29,14 @@ export function DestinationIntro({ destination_text }) {
 
 export default function Intro() {
   return (
-    <div className={`text-center ${myFont.className}`}>
+    <div>
       <div className="">
-        <p className="text-white text-3xl">your</p>
-        <p className="text-white text-6xl ">amazing vacation</p>
-        <p className="text-white text-3xl">starts here</p>
+        <p className={`text-center ${myFont.className} text-white text-6xl`}>
+          PlanyourTrails
+        </p>
+        <p className={`text-center ${myFont.className} text-white text-2xl`}>
+          by Chirag Khandelwal{" "}
+        </p>
       </div>
     </div>
   );

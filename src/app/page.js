@@ -19,6 +19,9 @@ const DynamicComponent = dynamic(
     ssr: false,
   }
 );
+import localFont from "next/font/local";
+const myFont = localFont({ src: "../../src/app/Sirukota.ttf" });
+import Link from "next/link";
 
 export default function Home() {
   const bottomRef = useRef();
@@ -37,10 +40,23 @@ export default function Home() {
           src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg"
         ></img>
 
-        <div className="absolute  inset-x-0 bottom-20">
+        <div className="absolute  inset-x-0 top-2">
           <Intro className="w-screen "></Intro>
+        </div>
+        <div className="absolute  inset-x-0 bottom-2">
           <LeadGenNew scrollCallback={scrollToBottom}></LeadGenNew>
         </div>
+      </div>
+      <div ref={bottomRef} className="mt-20">
+        <div className="h-48 items-center px-2">
+          <div className="text-center font-medium font-merriweather mt-3 ">
+            Hello! I'm <div className="font-abril text-xl pb-2">Chirag</div>a
+            avid traveler who has traveled to 20+ countries building amazing
+            travel mememories and expertise. I can help you with itinerary,
+            bookings and also full fledged packages customised for you.
+          </div>
+        </div>
+        <Footer></Footer>
       </div>
 
       <div className="h-screen bg-scroll">
@@ -57,8 +73,33 @@ export default function Home() {
         <CreatorCredentials></CreatorCredentials>
       </div>
 
-      <div ref={bottomRef} className="mt-20">
-        <Footer></Footer>
+      <h3 className="text-center text-obtext text-lg"> Follow me on </h3>
+      <div className="flex w-full items-center justify-center gap-7">
+        <div>
+          <Link href={"https://www.instagram.com/travelerchirag/"}>
+            <img
+              src="/elements/instagram.png"
+              className="w-10 h-10 object-contain "
+            ></img>
+          </Link>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center my-10">
+        <div className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather">
+          All rights reserved by
+        </div>
+        {/* <img
+            src="/elements/cupcake.png"
+            className="w-10 h-10 object-contain"
+          ></img> */}
+
+        <Link
+          className="font-bold lg:text-xl  md:text-xl sm:text-sm text-obtext text-start p-2 font-merriweather"
+          href="/"
+        >
+          Planyourtrails
+        </Link>
       </div>
     </div>
   );

@@ -98,6 +98,12 @@ export default function LeadGenForm() {
 
   return (
     <div className="bg-white px-4 py-5 sm:px-6 lg:px-8 m-2 rounded-lg">
+      <h2 className="mb-2 text-3xl leading-tight text-oceanblue lg:text-4xl text-center font-merriweather">
+        Want me to plan your next trip?
+      </h2>
+      <p className="text-base font-medium leading-7 text-obtext text-center font-merriweather">
+        Fill this form below, and my team will reach out to you soon.
+      </p>
       <form
         action={createLead}
         className="mx-auto mt-5 max-w-xl sm:mt-10 lg:mt-20"
