@@ -32,7 +32,7 @@ export default function Intro() {
     <div>
       <div className="">
         <p className={`text-center ${myFont.className} text-white text-6xl`}>
-          PlanyourTrails
+          Plan Your Trails
         </p>
         <p className={`text-center ${myFont.className} text-white text-2xl`}>
           by Chirag Khandelwal{" "}
