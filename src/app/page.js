@@ -40,17 +40,17 @@ export default function Home() {
           src="https://pastreeadmin.s3.ap-south-1.amazonaws.com/travelerchirag/destinations/amsterdam.jpg"
         ></img>
 
-        <div className="absolute  inset-x-0 top-2">
+        <div className="absolute  inset-x-0 top-7">
           <Intro className="w-screen "></Intro>
         </div>
         <div className="absolute  inset-x-0 bottom-2">
           <LeadGenNew scrollCallback={scrollToBottom}></LeadGenNew>
         </div>
       </div>
-      <div ref={bottomRef} className="mt-20">
+      <div ref={bottomRef} className="mt-5">
         <div className="h-48 items-center px-2">
           <div className="text-center font-medium font-merriweather mt-3 ">
-            Hello! I'm <div className="font-abril text-xl pb-2">Chirag</div>a
+            Hello! I am <div className="font-abril text-xl pb-2">Chirag</div>a
             avid traveler who has traveled to 20+ countries building amazing
             travel mememories and expertise. I can help you with itinerary,
             bookings and also full fledged packages customised for you.
