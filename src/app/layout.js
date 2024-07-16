@@ -1,5 +1,6 @@
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import { Sanchez } from "next/font/google";
 import { Merriweather } from "next/font/google";
 import { Abril_Fatface } from "next/font/google";
@@ -39,7 +40,10 @@ export default function RootLayout({ children }) {
       className={`w-screen overflow-x-hidden position-fixed ${merriweather.variable}  ${abril.variable} `}
     >
       <SpeedInsights />
-      <body className="">{children}</body>
+      <body className="">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

@@ -31,7 +31,7 @@ export default function Intro() {
   return (
     <div>
       <div className="">
-        <p className={`text-center ${myFont.className} text-white text-6xl`}>
+        <p className={`text-center ${myFont.className} text-white text-5xl`}>
           Plan Your Trails
         </p>
         <p className={`text-center ${myFont.className} text-white text-2xl`}>
