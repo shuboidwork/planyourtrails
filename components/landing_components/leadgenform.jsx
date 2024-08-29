@@ -371,10 +371,10 @@ export default function LeadGenForm() {
           </Link>
           .
         </label>
-        <div className="mt-4 flex justify-center sm:col-span-2 bg-obtext">
+        <div className="mt-4 flex justify-center  bg-obtext">
           <button
             type="submit"
-            className="rounded-md bg-obtext px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-obtext text-center"
+            className="w-full rounded-md bg-obtext px-3.5 py-2.5 text-sm font-semibold text-white  text-center"
           >
             Submit
           </button>
