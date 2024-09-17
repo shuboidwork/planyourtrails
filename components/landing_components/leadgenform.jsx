@@ -83,6 +83,7 @@ export default function LeadGenForm() {
             budget: formData.get("budget"),
             destination: formData.get("destination"),
             product: formData.get("product"),
+            travel_month: formData.get("travel_month"),
           },
         }
       );
@@ -337,6 +338,40 @@ export default function LeadGenForm() {
               </div>
             </div>
           </div>
+          <div className="w-full">
+            <label
+              htmlFor="travel_month"
+              className="block text-sm font-semibold leading-6 text-obtext"
+            >
+              Approximate month of your Travel
+            </label>
+            <div className="mt-2.5">
+              <select
+                name="travel_month"
+                id="travel_month"
+                required="true"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-obtext shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-obtext sm:text-sm sm:leading-6"
+              >
+                {[...Array(12)].map((_, index) => {
+                  const date = new Date();
+                  date.setMonth(date.getMonth() + index);
+                  const monthName = date.toLocaleString("default", {
+                    month: "long",
+                  });
+                  const year = date.getFullYear();
+                  return (
+                    <option
+                      key={`${monthName}-${year}`}
+                      value={`${monthName}-${year}`}
+                    >
+                      {`${monthName} ${year}`}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          </div>
+
           <div>
             <label
               htmlFor="passions"
